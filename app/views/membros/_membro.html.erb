@@ -1,0 +1,71 @@
+<div id="<%= dom_id membro %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome:</strong>
+    <%= membro.nome %> <%= membro.sobrenome %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Telefone:</strong>
+    <%= membro.telefone %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data nascimento:</strong>
+    <%= membro.data_nascimento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data alianca:</strong>
+    <%= membro.data_alianca %>
+  </p>
+
+  <% if action_name == "show" %>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= membro.email %>
+  </p>  
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Endereco:</strong>
+    <%= membro.endereco %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Bairro:</strong>
+    <%= membro.bairro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cidade:</strong>
+    <%= membro.cidade %>
+  </p>  
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data batismo:</strong>
+    <%= membro.data_batismo %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data desligamento:</strong>
+    <%= membro.data_desligamento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Observacoes:</strong>
+    <%= membro.observacoes %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Situacao:</strong>
+    <%= membro.situacao %>
+  </p>
+
+  <% end %>
+    
+  <% if action_name != "show" %>
+    <%= link_to "Show this membro", membro, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this membro', edit_membro_path(membro), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

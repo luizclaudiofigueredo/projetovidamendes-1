@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  descricao: MyText
+  datahora_inicio: 2022-07-01 11:27:50
+  datahora_termino: 2022-07-01 11:27:50
+  vagas: 1
+  valor: 9.99
+  link_inscricao: MyString
+
+two:
+  titulo: MyString
+  descricao: MyText
+  datahora_inicio: 2022-07-01 11:27:50
+  datahora_termino: 2022-07-01 11:27:50
+  vagas: 1
+  valor: 9.99
+  link_inscricao: MyString

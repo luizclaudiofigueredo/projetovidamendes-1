@@ -1,32 +1,29 @@
-<div id="<%= dom_id visitante %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Nome:</strong>
-    <%= visitante.nome %>
-  </p>
+  <div id="<%= dom_id visitante %>">
+    
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Sobrenome:</strong>
-    <%= visitante.sobrenome %>
-  </p>
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Nome:</strong>
+      <%= visitante.nome %> <%= visitante.sobrenome %>
+    </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Telefone:</strong>
-    <%= visitante.telefone %>
-  </p>
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Telefone:</strong>
+      <%= visitante.telefone %>
+    </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Grupo:</strong>
-    <%= visitante.grupo %>
-  </p>
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Data da Visita:</strong>
+      <%= visitante.created_at.strftime('%d/%m/%Y') %>
+    </p>  
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Observacoes:</strong>
-    <%= visitante.observacoes %>
-  </p>
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Grupo:</strong>
+      <%= visitante.grupo %>
+    </p>
 
-  <% if action_name != "show" %>
-    <%= link_to "Show this visitante", visitante, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit this visitante', edit_visitante_path(visitante), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
-  <% end %>
-</div>
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Observacoes:</strong>
+      <%= visitante.observacoes %>
+    </p>
+
+  </div>

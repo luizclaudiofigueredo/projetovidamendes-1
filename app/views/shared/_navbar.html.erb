@@ -1,0 +1,34 @@
+<!--Nav-->
+<% if usuario_signed_in? %>
+<div class='flex'>
+<div class="flex bg-gray-100 p-2 mt-0 fixed w-full z-10 top-0 mb-6 border-y shadow-lg">
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
+    <div class="flex w-full md:w-1/2 justify-center md:justify-start">
+      <%= link_to '<i class="em em-grinning"></i> Projeto Vida Mendes'.html_safe, root_path, class: 'text-gray-500 no-underline hover:text-gray-600 hover:no-underline' %>
+    </div>
+    <ul class="list-reset flex flex-1 md:flex-none items-center">
+      <li class="mr-3">
+        <%= button_to "Sair", destroy_usuario_session_path, method: :delete, class: "inline-block text-gray-500 no-underline hover:text-gray-600 hover:text-underline px-4" %>
+      </li>
+    </ul>
+  </div>  
+</div>
+<div class="flex fixed top-1 bg-white justify-center mt-9 p-2 w-full z-10 mb-6 shadow-[0_-1px_0_-1px_rgba(0,0,0,0.3)]">
+<ul class="list-reset flex justify-between flex-1 md:flex-none items-center mt-2">
+  <li class="mr-3">
+    <%= link_to 'Dashboard', root_path, class: 'inline-block text-white bg-violet-400 rounded-full no-underline hover:text-gray-500 hover:text-underline py-1 px-4' %>
+  </li>
+  <li class="mr-3">
+    <%= link_to 'Visitantes', visitantes_path, class: 'inline-block text-gray-600 no-underline hover:text-gray-500 hover:text-underline py-2 px-4' %>
+  </li>
+  <li class="mr-3">
+    <%= link_to 'Aliançados', membros_path, class: 'inline-block text-gray-600 no-underline hover:text-gray-500 hover:text-underline py-2 px-4' %>
+  </li>
+  <li class="mr-3">
+    <%= link_to 'Agenda', agendas_path, class: 'inline-block text-gray-600 no-underline hover:text-gray-500 hover:text-underline py-2 px-4' %>
+  </li>
+
+</ul>
+</div> 
+</div>
+<% end %>

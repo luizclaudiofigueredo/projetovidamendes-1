@@ -4,7 +4,21 @@ class VisitantesController < ApplicationController
 
   # GET /visitantes or /visitantes.json
   def index
-    @visitantes = Visitante.all
+
+    if params[:query].present?
+      @visitantes = Visitante.where('nome LIKE ?', '%' + params[:query] + '%')
+    else
+      @visitantes = Visitante.all.order(id: :desc)
+    end
+
+    respond_to do |format|
+      if turbo_frame_request? && turbo_frame_request_id=='search'
+        format.html { render partial: 'visitante_table', locals: { visitantes: @visitantes } }
+      else
+        format.html
+      end
+    end
+
   end
 
   # GET /visitantes/1 or /visitantes/1.json
@@ -66,6 +80,6 @@ class VisitantesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def visitante_params
-      params.require(:visitante).permit(:nome, :sobrenome, :telefone, :grupo, :observacoes, :id)
+      params.require(:visitante).permit(:nome, :sobrenome, :telefone, :grupo, :categoria, :observacoes, :id)
     end
 end

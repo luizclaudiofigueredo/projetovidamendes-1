@@ -1,0 +1,47 @@
+<div id="<%= dom_id agenda %>">
+
+  <p class="my-5">
+    <%= agenda.titulo %>
+  </p>
+
+  <p class="my-5">
+    <%= agenda.descricao %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Datahora inicio:</strong>
+    <%= agenda.datahora_inicio.strftime('%d/%m/%Y %H:%M') if agenda.datahora_inicio.present? %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Datahora termino:</strong>
+    <%= agenda.datahora_termino.strftime('%d/%m/%Y %H:%M') if agenda.datahora_termino.present? %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Vagas:</strong>
+    <%= agenda.vagas %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Valor:</strong>
+    <%= number_to_currency(agenda.valor, :unit => "R$ ", :separator => ",", :delimiter => ".") %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Link inscricao:</strong>
+    <%= agenda.link_inscricao %>
+  </p>
+
+  <p class="my-5">
+    <% if agenda.imagem.attached? %>
+        <%= image_tag agenda.imagem, style: 'height:400px; width:auto;' %>
+    <% end %>
+  </p>  
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this agenda", agenda, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this agenda', edit_agenda_path(agenda), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

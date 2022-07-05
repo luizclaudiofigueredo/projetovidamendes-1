@@ -1,0 +1,45 @@
+<%= turbo_frame_tag 'search' do %>
+
+    <table class="table-auto w-full mt-8">
+        <thead>
+            <tr>
+                <th class='text-gray-600 text-sm border-y border-gray-200 py-2'>Nome</th>
+                <th class='text-gray-600 text-sm border-y border-gray-200 py-2'>Telefone</th>
+                <th class='text-gray-600 text-sm border-y border-gray-200 py-2'>Data Visita</th>
+                <th class='text-gray-600 text-sm border-y border-gray-200 py-2' colspan='2'>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <% visitantes.each do |visitante| %>
+
+                <tr dom_id visitante class="min-w-full p-4 border-solid border-y border-gray-200">
+                    
+                    <td class="my-5 text-xs border-solid border-y border-gray-200">
+                    <%= visitante.nome %> <%= visitante.sobrenome %>
+                    </td>
+                
+                    <td class="my-5 text-xs border-solid border-y border-gray-200">
+                    <%= visitante.telefone %>
+                    </td>
+                
+                    <td class="my-5 text-xs border-solid border-y border-gray-200 flex-auto">
+                    <%= visitante.created_at.strftime('%d/%m/%Y') %>
+                    </td>  
+                
+                    <td class="my-5 justify-center">
+                    <%= link_to "Exibir", visitante, class: "rounded-lg py-2 px-5 bg-blue-400 inline-block text-sm" %>
+                    </td>
+                    <td class="my-5">
+                    <%= link_to 'Editar', edit_visitante_path(visitante), class: "rounded-lg py-2 ml-2 px-5 bg-green-400 inline-block text-sm" %>
+                    </td>
+
+                </tr>
+
+            <% end %>
+
+        </tbody>
+    </table>  
+
+<% end %>
+

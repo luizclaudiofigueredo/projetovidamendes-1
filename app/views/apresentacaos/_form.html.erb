@@ -1,0 +1,47 @@
+<%= form_with(model: apresentacao, class: "contents") do |form| %>
+  <% if apresentacao.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(apresentacao.errors.count, "error") %> prohibited this apresentacao from being saved:</h2>
+
+      <ul>
+        <% apresentacao.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label 'Nome do Bebê' %>
+    <%= form.text_field :nome_bebe, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label 'Nome da Mãe' %>
+    <%= form.text_field :nome_mae, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label 'Nome do Pai' %>
+    <%= form.text_field :nome_pai, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label 'Data de nascimento' %>
+    <%= form.text_field :data_nascimento, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label 'Sexo' %>
+    <%= form.select :sexo, [['Masculino', 1], ['Feminino', 2]], class: "form-select appearance-none block w-full px-3 py-2 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label 'Data da apresentação' %>
+    <%= form.date_field :data_apresentacao, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>

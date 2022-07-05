@@ -1,0 +1,37 @@
+<div id="<%= dom_id apresentacao %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome do bebê:</strong>
+    <%= apresentacao.nome_bebe %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome da mae:</strong>
+    <%= apresentacao.nome_mae %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome do pai:</strong>
+    <%= apresentacao.nome_pai %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data de nascimento:</strong>
+    <%= apresentacao.data_nascimento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Sexo:</strong>
+    <%= apresentacao.sexo_crianca %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data da apresentação:</strong>
+    <%= apresentacao.data_apresentacao.strftime('%d/%m/%Y') %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Exibir", apresentacao, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Editar', edit_apresentacao_path(apresentacao), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

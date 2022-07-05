@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_bebe: MyString
+  nome_mae: MyString
+  nome_pai: MyString
+  data_nascimento: MyString
+  sexo: 1
+  data_apresentacao: 2022-07-03
+
+two:
+  nome_bebe: MyString
+  nome_mae: MyString
+  nome_pai: MyString
+  data_nascimento: MyString
+  sexo: 1
+  data_apresentacao: 2022-07-03
