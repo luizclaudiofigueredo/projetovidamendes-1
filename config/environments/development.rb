@@ -69,5 +69,7 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   config.hosts << "www.projetovidamendes.com"
+
+  config.hosts << "dfaa-179-191-45-73.sa.ngrok.io"
   
 end

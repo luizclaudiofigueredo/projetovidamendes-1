@@ -16,11 +16,13 @@
   <%= render('shared/navbar') %>
 
   <!--Container-->
-  <div class="flex flex-row container mx-auto bg-white mt-48 md:mt-28">
+  <div class="flex flex-row container mx-auto bg-white mt-48 md:mt-28 mb-8">
    
     <%= yield %>
     
   </div>
+
+  <%= render('shared/footer') %>
 
   </body>
 </html>

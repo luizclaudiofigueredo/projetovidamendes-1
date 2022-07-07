@@ -16,16 +16,16 @@
 <div class="flex fixed top-1 bg-white justify-center mt-9 p-2 w-full z-10 mb-6 shadow-[0_-1px_0_-1px_rgba(0,0,0,0.3)]">
 <ul class="list-reset flex justify-between flex-1 md:flex-none items-center mt-2">
   <li class="mr-3">
-    <%= link_to 'Dashboard', root_path, class: 'inline-block text-white bg-violet-400 rounded-full no-underline hover:text-gray-500 hover:text-underline py-1 px-4' %>
+    <%= link_to 'Dashboard', root_path, class: is_active?(root_path) %>
   </li>
   <li class="mr-3">
-    <%= link_to 'Visitantes', visitantes_path, class: 'inline-block text-gray-600 no-underline hover:text-gray-500 hover:text-underline py-2 px-4' %>
+    <%= link_to 'Visitantes', visitantes_path, class: is_active?(visitantes_path) %>
   </li>
   <li class="mr-3">
-    <%= link_to 'Aliançados', membros_path, class: 'inline-block text-gray-600 no-underline hover:text-gray-500 hover:text-underline py-2 px-4' %>
+    <%= link_to 'Aliançados', membros_path, class: is_active?(membros_path) %>
   </li>
   <li class="mr-3">
-    <%= link_to 'Agenda', agendas_path, class: 'inline-block text-gray-600 no-underline hover:text-gray-500 hover:text-underline py-2 px-4' %>
+    <%= link_to 'Agendas', agendas_path, class: is_active?(agendas_path) %>
   </li>
 
 </ul>
