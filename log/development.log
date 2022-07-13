@@ -26923,3 +26923,115 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 280ms (Views: 7.0ms | ActiveRecord: 132.0ms | Allocations: 2927)
 
 
+Started GET "/" for 127.0.0.1 at 2022-07-13 12:05:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (132.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 45ms (ActiveRecord: 0.0ms | Allocations: 5955)
+
+
+Started GET "/usuarios/sign_in" for 127.0.0.1 at 2022-07-13 12:05:10 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/devise.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/devise
+  Rendered devise/sessions/new.html.erb within layouts/devise (Duration: 9.9ms | Allocations: 1756)
+  Rendered layout layouts/devise.html.erb (Duration: 17.1ms | Allocations: 5568)
+Completed 200 OK in 918ms (Views: 32.0ms | ActiveRecord: 665.6ms | Allocations: 15464)
+
+
+Started POST "/usuarios/sign_in" for 127.0.0.1 at 2022-07-13 12:05:34 -0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "usuario"=>{"email"=>"projetovidachurch.mendes@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Entrar"}
+  [1m[36mUsuario Load (133.4ms)[0m  [1m[34mSELECT `usuarios`.* FROM `usuarios` WHERE `usuarios`.`email` = 'projetovidachurch.mendes@gmail.com' ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 627ms (ActiveRecord: 133.4ms | Allocations: 6241)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-13 12:05:35 -0300
+Processing by WelcomeController#index as TURBO_STREAM
+  [1m[36mUsuario Load (133.0ms)[0m  [1m[34mSELECT `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 124)
+  Rendered shared/_navbar.html.erb (Duration: 3.6ms | Allocations: 821)
+  Rendered shared/_footer.html.erb (Duration: 3.3ms | Allocations: 355)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 2817)
+Completed 200 OK in 304ms (Views: 25.0ms | ActiveRecord: 133.0ms | Allocations: 5017)
+
+
+Started GET "/visitantes" for 127.0.0.1 at 2022-07-13 12:05:37 -0300
+Processing by VisitantesController#index as HTML
+  [1m[36mUsuario Load (133.4ms)[0m  [1m[34mSELECT `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering visitantes/index.html.erb within layouts/application
+  [1m[36mVisitante Load (133.5ms)[0m  [1m[34mSELECT `visitantes`.* FROM `visitantes` ORDER BY `visitantes`.`id` DESC[0m
+  ↳ app/views/visitantes/_visitante_table.html.erb:18
+  Rendered visitantes/_visitante_table.html.erb (Duration: 314.6ms | Allocations: 13925)
+  Rendered visitantes/index.html.erb within layouts/application (Duration: 319.1ms | Allocations: 15271)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 443)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 324.3ms | Allocations: 16728)
+Completed 200 OK in 746ms (Views: 61.0ms | ActiveRecord: 534.3ms | Allocations: 19956)
+
+
+Started GET "/visitantes/101" for 127.0.0.1 at 2022-07-13 12:05:41 -0300
+Processing by VisitantesController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUsuario Load (133.2ms)[0m  [1m[34mSELECT `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[36mVisitante Load (133.1ms)[0m  [1m[34mSELECT `visitantes`.* FROM `visitantes` WHERE `visitantes`.`id` = 101 LIMIT 1[0m
+  ↳ app/controllers/visitantes_controller.rb:78:in `set_visitante'
+  Rendering layout layouts/application.html.erb
+  Rendering visitantes/show.html.erb within layouts/application
+  Rendered visitantes/_visitante.html.erb (Duration: 2.7ms | Allocations: 309)
+  Rendered visitantes/show.html.erb within layouts/application (Duration: 38.6ms | Allocations: 1322)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 420)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 2667)
+Completed 200 OK in 460ms (Views: 44.7ms | ActiveRecord: 266.2ms | Allocations: 5372)
+
+
+Started GET "/visitantes" for 127.0.0.1 at 2022-07-13 12:05:48 -0300
+Processing by VisitantesController#index as HTML
+  [1m[36mUsuario Load (132.7ms)[0m  [1m[34mSELECT `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering visitantes/index.html.erb within layouts/application
+  [1m[36mVisitante Load (133.5ms)[0m  [1m[34mSELECT `visitantes`.* FROM `visitantes` ORDER BY `visitantes`.`id` DESC[0m
+  ↳ app/views/visitantes/_visitante_table.html.erb:18
+  Rendered visitantes/_visitante_table.html.erb (Duration: 160.8ms | Allocations: 9204)
+  Rendered visitantes/index.html.erb within layouts/application (Duration: 163.3ms | Allocations: 10079)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 422)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 166.9ms | Allocations: 11438)
+Completed 200 OK in 441ms (Views: 35.0ms | ActiveRecord: 266.2ms | Allocations: 13012)
+
+
+Started GET "/visitantes/96" for 127.0.0.1 at 2022-07-13 12:05:52 -0300
+Processing by VisitantesController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mUsuario Load (132.7ms)[0m  [1m[34mSELECT `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  [1m[36mVisitante Load (133.2ms)[0m  [1m[34mSELECT `visitantes`.* FROM `visitantes` WHERE `visitantes`.`id` = 96 LIMIT 1[0m
+  ↳ app/controllers/visitantes_controller.rb:78:in `set_visitante'
+  Rendering layout layouts/application.html.erb
+  Rendering visitantes/show.html.erb within layouts/application
+  Rendered visitantes/_visitante.html.erb (Duration: 0.5ms | Allocations: 45)
+  Rendered visitantes/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 481)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 420)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1825)
+Completed 200 OK in 420ms (Views: 9.4ms | ActiveRecord: 265.9ms | Allocations: 3776)
+
+
+Started GET "/visitantes" for 127.0.0.1 at 2022-07-13 12:05:54 -0300
+Processing by VisitantesController#index as HTML
+  [1m[36mUsuario Load (132.7ms)[0m  [1m[34mSELECT `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 ORDER BY `usuarios`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering visitantes/index.html.erb within layouts/application
+  [1m[36mVisitante Load (133.5ms)[0m  [1m[34mSELECT `visitantes`.* FROM `visitantes` ORDER BY `visitantes`.`id` DESC[0m
+  ↳ app/views/visitantes/_visitante_table.html.erb:18
+  Rendered visitantes/_visitante_table.html.erb (Duration: 159.8ms | Allocations: 9204)
+  Rendered visitantes/index.html.erb within layouts/application (Duration: 161.7ms | Allocations: 10079)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 422)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 14)
+  Rendered layout layouts/application.html.erb (Duration: 165.3ms | Allocations: 11438)
+Completed 200 OK in 440ms (Views: 32.9ms | ActiveRecord: 266.2ms | Allocations: 13008)
+
+
