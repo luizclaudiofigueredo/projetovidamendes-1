@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_03_140448) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_08_111319) do
   create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -62,6 +62,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_03_140448) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "eventos", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.date "data_evento"
+    t.bigint "tipo_evento_id", null: false
+    t.bigint "pessoa_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "observacoes"
+    t.index ["pessoa_id"], name: "index_eventos_on_pessoa_id"
+    t.index ["tipo_evento_id"], name: "index_eventos_on_tipo_evento_id"
+  end
+
   create_table "membros", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "nome"
     t.string "sobrenome"
@@ -76,6 +87,30 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_03_140448) do
     t.date "data_desligamento"
     t.text "observacoes"
     t.integer "situacao", limit: 1
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pessoas", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "nome"
+    t.string "sobrenome"
+    t.string "nome_pai"
+    t.string "nome_mae"
+    t.string "telefone"
+    t.date "data_nascimento"
+    t.string "endereco"
+    t.string "bairro"
+    t.string "cidade"
+    t.string "estado"
+    t.string "cep"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "sexo", limit: 1
+  end
+
+  create_table "tipo_eventos", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "descricao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -105,4 +140,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_03_140448) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "eventos", "pessoas"
+  add_foreign_key "eventos", "tipo_eventos"
 end

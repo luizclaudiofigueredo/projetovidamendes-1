@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data_evento: 2022-07-08
+  tipo_evento: one
+  pessoa: one
+
+two:
+  data_evento: 2022-07-08
+  tipo_evento: two
+  pessoa: two

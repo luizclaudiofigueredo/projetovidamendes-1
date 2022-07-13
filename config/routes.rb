@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :eventos
+  resources :tipo_eventos
+  resources :pessoas
   resources :apresentacaos
   root 'welcome#index'
   resources :agendas

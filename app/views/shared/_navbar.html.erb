@@ -8,7 +8,7 @@
     </div>
     <ul class="list-reset flex flex-1 md:flex-none items-center">
       <li class="mr-3">
-        <%= button_to "Sair", destroy_usuario_session_path, method: :delete, class: "inline-block text-gray-500 no-underline hover:text-gray-600 hover:text-underline px-4" %>
+        <%= button_to "Sair", destroy_usuario_session_path, data: { turbo: false }, method: :delete, class: "inline-block text-gray-500 no-underline hover:text-gray-600 hover:text-underline px-4" %>
       </li>
     </ul>
   </div>  
@@ -16,16 +16,13 @@
 <div class="flex fixed top-1 bg-white justify-center mt-9 p-2 w-full z-10 mb-6 shadow-[0_-1px_0_-1px_rgba(0,0,0,0.3)]">
 <ul class="list-reset flex justify-between flex-1 md:flex-none items-center mt-2">
   <li class="mr-3">
-    <%= link_to 'Dashboard', root_path, class: is_active?(root_path) %>
+    <%= link_to 'Dashboard', root_path, class: is_active?('welcome') %>
   </li>
   <li class="mr-3">
-    <%= link_to 'Visitantes', visitantes_path, class: is_active?(visitantes_path) %>
+    <%= link_to 'Pessoas', pessoas_path, class: is_active?('pessoas') %>
   </li>
   <li class="mr-3">
-    <%= link_to 'Aliançados', membros_path, class: is_active?(membros_path) %>
-  </li>
-  <li class="mr-3">
-    <%= link_to 'Agendas', agendas_path, class: is_active?(agendas_path) %>
+    <%= link_to 'Agendas', agendas_path, class: is_active?('agendas') %>
   </li>
 
 </ul>

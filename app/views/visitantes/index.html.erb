@@ -4,8 +4,8 @@
   <% end %>
 
   <div class="flex justify-between items-center">
-    <h1 class="font-bold text-3xl">Visitantes</h1>
-    <%= link_to 'Novo Visitante', new_visitante_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+    <h1 class="font-bold text-3xl">Pessoas</h1>
+    <%= link_to 'Nova Pessoa', new_visitante_path, class: "rounded-full py-3 px-5 bg-blue-600 text-white block font-medium" %>
   </div>
 
   <div class="mx-4">
@@ -20,7 +20,7 @@
 
   <div>
 
-    <main class="flex-1 mx-12">
+    <main class="flex-1 mx-4">
              
         <%= render 'visitante_table', visitantes: @visitantes %>      
 

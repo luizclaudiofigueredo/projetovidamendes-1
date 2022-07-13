@@ -6,10 +6,10 @@
 
     <%= render @membro %>
 
-    <%= link_to 'Edit this membro', edit_membro_path(@membro), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Editar', edit_membro_path(@membro), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <div class="inline-block ml-2">
-      <%= button_to 'Destroy this membro', membro_path(@membro), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= button_to 'Excluir', membro_path(@membro), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
     </div>
-    <%= link_to 'Back to membros', membros_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Voltar', membros_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
   </div>
 </div>

@@ -1,28 +1,27 @@
   <div id="<%= dom_id visitante %>">
     
-
     <p class="my-5">
-      <strong class="block font-medium mb-1">Nome:</strong>
-      <%= visitante.nome %> <%= visitante.sobrenome %>
+      <strong class="text-xs font-light block font-medium mb-1">Nome Completo:</strong>
+      <%= visitante.nome_completo.upcase %>
     </p>
 
     <p class="my-5">
-      <strong class="block font-medium mb-1">Telefone:</strong>
+      <strong class="text-xs font-light block font-medium mb-1">Telefone:</strong>
       <%= visitante.telefone %>
     </p>
 
     <p class="my-5">
-      <strong class="block font-medium mb-1">Data da Visita:</strong>
+      <strong class="text-xs font-light block font-medium mb-1">Data da Visita:</strong>
       <%= visitante.created_at.strftime('%d/%m/%Y') %>
     </p>  
 
     <p class="my-5">
-      <strong class="block font-medium mb-1">Grupo:</strong>
-      <%= visitante.grupo %>
+      <strong class="text-xs font-light block font-medium mb-1">Grupo:</strong>
+      <%= visitante.nome_grupo %>
     </p>
 
     <p class="my-5">
-      <strong class="block font-medium mb-1">Observacoes:</strong>
+      <strong class="text-xs font-light block font-medium mb-1">Observacoes:</strong>
       <%= visitante.observacoes %>
     </p>
 

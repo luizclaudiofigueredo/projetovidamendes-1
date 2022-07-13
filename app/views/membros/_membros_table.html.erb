@@ -1,0 +1,43 @@
+<%= turbo_frame_tag 'search' do %>
+
+<div class="min-h-screen py-5">
+    
+    <div class='overflow-x-auto w-full'>
+
+        <table class="table-auto w-full mt-8">
+            <thead>
+                <tr>
+                    <th class='text-left text-gray-900 font-light text-xs border-y border-gray-200 py-2'>NOME COMPLETO</th>
+                    <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>TELEFONE</th>
+                    <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>DATA ALIANÇA</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <% membros.each do |membro| %>
+                    
+                    <tr dom_id membro class="min-w-full p-4 border-solid border-y border-gray-200">
+                        
+                        <td class="my-5 text-xs border-solid border-y border-gray-200 py-2">
+                        <p class="text-gray-800 font-bold"><%= link_to membro.nome_completo.upcase, membro, data: { turbo: false } %></p>
+                        </td>
+                    
+                        <td class="my-5 text-center text-xs border-solid border-y border-gray-200 py-2">
+                        <%= membro.telefone %>
+                        </td>
+                    
+                        <td class="my-5 text-center text-xs border-solid border-y border-gray-200 flex-auto py-2">
+                        <%= membro.data_alianca.strftime('%d/%m/%Y') if !membro.data_alianca.nil? %>
+                        </td>  
+                    
+                    </tr>
+
+                <% end %>
+
+            </tbody>
+        </table>  
+    </div>
+</div>
+
+<% end %>
+

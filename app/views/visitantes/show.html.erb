@@ -6,10 +6,10 @@
 
     <%= render @visitante %>
 
-    <%= link_to 'Editar este visitante', edit_visitante_path(@visitante), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Editar', edit_visitante_path(@visitante), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <div class="inline-block ml-2">
-      <%= button_to 'Excluir este visitante', visitante_path(@visitante), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= button_to 'Excluir', visitante_path(@visitante), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
     </div>
-    <%= link_to 'Voltar para visitantes', visitantes_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Voltar', visitantes_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
   </div>
 </div>

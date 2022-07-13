@@ -1,0 +1,67 @@
+<div id="<%= dom_id pessoa %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome:</strong>
+    <%= pessoa.nome %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Sobrenome:</strong>
+    <%= pessoa.sobrenome %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome pai:</strong>
+    <%= pessoa.nome_pai %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Nome mae:</strong>
+    <%= pessoa.nome_mae %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Telefone:</strong>
+    <%= pessoa.telefone %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Data nascimento:</strong>
+    <%= pessoa.data_nascimento %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Endereco:</strong>
+    <%= pessoa.endereco %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Bairro:</strong>
+    <%= pessoa.bairro %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cidade:</strong>
+    <%= pessoa.cidade %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Estado:</strong>
+    <%= pessoa.estado %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Cep:</strong>
+    <%= pessoa.cep %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Email:</strong>
+    <%= pessoa.email %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this pessoa", pessoa, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this pessoa', edit_pessoa_path(pessoa), data: { controller: "turbo" }, class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
