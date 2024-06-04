@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_08_111319) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_04_134304) do
   create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -58,6 +58,20 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_08_111319) do
     t.string "data_nascimento"
     t.integer "sexo", limit: 1
     t.date "data_apresentacao"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "estatisticas", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "tema_culto"
+    t.date "data_culto"
+    t.integer "total_presentes"
+    t.integer "total_visitantes"
+    t.integer "total_conversoes"
+    t.integer "total_aliancados"
+    t.integer "total_batismos"
+    t.integer "total_criancas"
+    t.text "observacoes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

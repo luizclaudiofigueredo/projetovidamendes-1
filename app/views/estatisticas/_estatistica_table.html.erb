@@ -1,0 +1,49 @@
+<%= turbo_frame_tag 'search' do %>
+
+<div class="min-h-screen py-5">
+    
+    <div class='overflow-x-auto w-full'>
+
+        <table class="table-auto w-full mt-8">
+            <thead>
+                <tr>
+                    <th class='text-left text-gray-900 font-light text-xs border-y border-gray-200 py-2'>DATA</th>
+                    <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>CELEBRAÇÃO</th>
+                    <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>TOTAL PRESENTES</th>
+                    <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>TOTAL CONVERSÕES</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <% estatisticas.each do |estatistica| %>
+                    
+                    <tr dom_id estatistica class="min-w-full p-4 border-solid border-y border-gray-200">
+                        
+                        <td class="my-5 text-xs border-solid border-y border-gray-200 py-2">
+                            <p class="text-gray-800 font-bold"><%= link_to estatistica.data_culto.strftime('%d/%m/%Y'), edit_estatistica_path(estatistica), data: { turbo: false } %></p>
+                        </td>
+                    
+                        <td class="my-5 text-center text-xs border-solid border-y border-gray-200">
+                            <%= estatistica.tema_culto %>
+                        </td>
+
+                        <td class="my-5 text-center text-xs border-solid border-y border-gray-200">
+                            <%= estatistica.total_presentes %>
+                        </td>                        
+ 
+                        <td class="my-5 text-center text-xs border-solid border-y border-gray-200">
+                            <%= estatistica.total_conversoes %>
+                        </td>                     
+                    </tr>
+
+                <% end %>
+
+            </tbody>
+        </table>
+        <div class="w-full flex justify-center mt-4">
+            <%== pagy_nav(@pagy) if @pagy.pages > 1 %>   
+        </div>
+    </div>
+</div>
+
+<% end %>
