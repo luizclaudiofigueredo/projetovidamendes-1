@@ -3,7 +3,7 @@
     
     <h2 class="mt-8 font-bold text-xl text-gray-800">Celebrações no mês de <%= Time.now.strftime('%B/%Y') %> </h2>
     
-    <div id="estatisticas" class="grid gap-4 my-2 sm:grid-cols-2">
+    <div id="estatisticas" class="grid gap-4 my-2 sm:grid-cols-3">
         <% @estatisticas.each do |estatistica| %>
           <%= render estatistica %>
         <% end %>
