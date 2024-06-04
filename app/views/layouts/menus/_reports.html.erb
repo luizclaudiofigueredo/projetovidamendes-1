@@ -1,0 +1,27 @@
+<div class="relative" data-controller="dropdown">
+    <button data-action="click->dropdown#toggle" class="text-white font-semibold text-[15px]">
+        Relatórios
+        <svg
+            xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block"
+            viewBox="0 0 24 24">
+            <path
+            d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
+            data-name="16" data-original="#FFFFFF" />
+        </svg>      
+    </button>
+    <div data-dropdown-target="menu" class="absolute hidden bg-white text-black mt-2 py-2 w-48 rounded shadow-lg min-w-[250px]">
+        <a href="#" class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block px-4 py-2">Relatório 1</a>
+        <div class="relative" data-controller="dropdown">
+            <button data-action="click->dropdown#toggle" class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block px-4 py-2 w-full text-left flex justify-between">
+                Relatório 2
+                <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#000000" style="margin-top: 0.38em;">
+                    <path d="M6.29 16.29a1 1 0 010-1.41L11.58 10 6.29 4.71a1 1 0 111.41-1.41l6 6a1 1 0 010 1.41l-6 6a1 1 0 01-1.41 0z"/>
+                </svg>
+            </button>
+            <div data-dropdown-target="menu" class="absolute hidden bg-white text-black mt-2 py-2 w-48 rounded shadow-lg left-full top-0 min-w-[250px]">
+                <a href="#" class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block px-4 py-2">Relatório 2 por nome</a>
+                <a href="#" class="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block px-4 py-2">Relatório 2 por codigo</a>
+            </div>
+        </div>  
+    </div>
+</div> 
