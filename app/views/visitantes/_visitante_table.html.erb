@@ -20,7 +20,7 @@
                     <tr dom_id visitante class="min-w-full p-4 border-solid border-y border-gray-200">
                         
                         <td class="my-5 text-xs border-solid border-y border-gray-200 py-2">
-                        <p class="text-gray-800 font-bold"><%= link_to visitante.nome_completo.upcase, visitante, data: { turbo: false } %></p>
+                        <p class="text-gray-800 font-bold"><%= link_to visitante.nome_completo.upcase, edit_visitante_path(visitante), data: { turbo: false } %></p>
                         </td>
                     
                         <td class="my-5 text-center text-xs border-solid border-y border-gray-200">
@@ -40,7 +40,10 @@
                 <% end %>
 
             </tbody>
-        </table>  
+        </table>
+        <div class="w-full flex justify-center mt-4">
+            <%== pagy_nav(@pagy) if @pagy.pages > 1 %>   
+        </div>
     </div>
 </div>
 

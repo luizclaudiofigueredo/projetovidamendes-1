@@ -6,10 +6,12 @@ class VisitantesController < ApplicationController
   def index
 
     if params[:query].present?
-      @visitantes = Visitante.where('nome LIKE ?', '%' + params[:query] + '%')
+      visitantes = Visitante.where('nome LIKE ? OR sobrenome LIKE ?', '%' + params[:query] + '%', '%' + params[:query] + '%')
     else
-      @visitantes = Visitante.all.order(id: :desc)
+      visitantes = Visitante.all.order(nome: :asc)
     end
+
+    @pagy, @visitantes = pagy(visitantes)
 
     respond_to do |format|
       if turbo_frame_request? && turbo_frame_request_id=='search'

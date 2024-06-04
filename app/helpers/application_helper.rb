@@ -1,6 +1,7 @@
 require 'uri'
 
 module ApplicationHelper
+  include Pagy::Frontend
   def is_active?(link_path)
     if params[:controller] === link_path
         "bg-violet-600 inline-block text-white rounded-full no-underline hover px-4"

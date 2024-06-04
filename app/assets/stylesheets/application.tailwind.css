@@ -12,3 +12,36 @@
 }
 
 */
+
+.button-gray {
+  @apply active:scale-95 rounded-lg bg-gray-200 border-solid border-2 border-gray-300 px-8 py-2 font-medium text-gray-500 outline-none focus:ring hover:opacity-90;
+}
+
+.button-blue {
+  @apply active:scale-95 rounded-lg bg-blue-600 px-8 py-2 font-medium text-white outline-none focus:ring hover:opacity-90;
+}
+
+.selected {
+  @apply bg-blue-600 text-white py-2 hover:text-gray-200;
+}
+
+.pagy {
+  
+  @apply flex space-x-1 font-semibold text-sm border-solid  border-2 w-fit text-gray-500 border-gray-300 mb-8;
+
+  a:not(.gap).current {
+    @apply text-white bg-[#007bff];
+  }
+
+  a:not(.gap) {
+    @apply block px-4 py-2 bg-gray-200;
+  }
+
+  label {
+    @apply inline-block whitespace-nowrap bg-gray-200 px-3 py-0.5;
+    input {
+      @apply bg-gray-100 border-none;
+    }
+  }
+
+}

@@ -13,27 +13,34 @@
 
   <div class="my-5">
     <%= form.label :nome %>
-    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :sobrenome %>
-    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
     <%= form.label :telefone %>
-    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
-    <%= form.label :grupo %>
-    <%= form.select :grupo, [['Criança', 1], ['Adolescente', 2], ['Jovem', 3], ['Adulto', 4], ['Idoso',5]], class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
+      <label for="gender" class="block text-gray-700 font-medium mb-2">Grupo</label>
+      <select id="visitante_grupo" name="visitante[grupo]"
+          class="border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400" required>
+          <option value="1">Criança</option>
+          <option value="2">Adolescente</option>
+          <option value="3">Jovem</option>
+          <option value="4">Adulto</option>
+          <option value="5">Idoso</option>
+      </select>
+  </div>  
 
-  <div class="my-5">
+ <div class="my-5">
     <%= form.label :observacoes %>
-    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline">
