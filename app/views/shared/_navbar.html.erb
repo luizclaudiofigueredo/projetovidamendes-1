@@ -1,7 +1,12 @@
-<div class="min-w-full">
-  <%= image_tag('logo.png')%>
+<div class="flex justify-between w-full bg-gray-800 text-white items-center p-4">
+  <div class="w-32">
+    <%= image_tag 'logo.png' %>
+  </div>
+  <%= button_to destroy_usuario_session_path, method: :delete, class: "text-white font-semibold text-[15px] mt-[0.05em]" do %>
+      Sair do Sistema
+  <% end %>   
 </div>
-<header class='shadow-md bg-[#356598] font-[sans-serif] tracking-wide relative z-50'>
+<header class='shadow-md bg-orange-600 font-[sans-serif] tracking-wide relative z-50'>
   <div class='flex flex-wrap justify-center px-10 py-3 relative'>
     <nav>
       <div class="container mx-auto flex items-center justify-between">
@@ -12,10 +17,7 @@
           <%= link_to visitantes_path, class: "text-white font-semibold text-[15px] mt-[0.05em]" do %>
               Pessoas
           <% end %>          
-          <%= render 'layouts/menus/reports'%> 
-          <%= button_to destroy_usuario_session_path, method: :delete, class: "text-white font-semibold text-[15px] mt-[0.05em]" do %>
-              Sair
-          <% end %>           
+          <%= render 'layouts/menus/reports'%>           
         </div>
       </div>
     </nav>
