@@ -11,6 +11,6 @@ class Visitante < ApplicationRecord
     end
 
     def nome_completo
-        self.nome + ' ' + self.sobrenome
+        "#{self.nome} #{self.sobrenome}"
     end
 end
