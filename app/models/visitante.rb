@@ -6,14 +6,20 @@ class Visitante < ApplicationRecord
 
     validate :unique_nome_completo
 
-    GRUPO = { 1 => "CRIANÇA", 
-              2 => "ADOLESCENTE",
-              3 => "JOVEM",
-              4 => "ADULTO",
-              5 => "IDOSO" }
-
+    GRUPO = {
+        1 => "CRIANÇA",
+        2 => "ADOLESCENTE",
+        3 => "JOVEM",
+        4 => "ADULTO",
+        5 => "IDOSO"
+    }
+      
     def nome_grupo
-        "#{self.grupo} - #{GRUPO[self.grupo]}"
+        if grupo.is_a?(Integer) && GRUPO.key?(grupo)
+            "#{grupo} - #{GRUPO[grupo]}"
+        else
+            grupo.upcase
+        end
     end
 
     def nome_completo
