@@ -5,24 +5,7 @@ class Visitante < ApplicationRecord
     validate :validate_unique_telefone
     validates :nome, :telefone, :grupo, presence: true   
     validate :unique_nome_completo
-
-    def nome_grupo
-        case self.grupo
-        when 1
-            "Criança"
-        when 2
-            "Adolescente"
-        when 3
-            "Jovem"
-        when 4
-            "Adulto"
-        when 5
-            "Idoso"
-        else
-            "Unknown"
-        end
-    end
-      
+     
     def nome_completo
         "#{self.nome} #{self.sobrenome}"
     end
