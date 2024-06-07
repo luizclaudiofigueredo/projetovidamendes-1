@@ -26,7 +26,7 @@
                         </td>
 
                         <td class="my-5 text-center text-xs border-solid border-y border-gray-200">
-                        <%= visitante&.grupo %>
+                        <%= visitante.grupo.try(:name) if visitante.grupo.is_a?(Grupo) %>
                         </td>                        
                     
                         <td class="my-5 text-center text-xs border-solid border-y border-gray-200 flex-auto">

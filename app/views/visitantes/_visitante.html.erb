@@ -17,7 +17,7 @@
 
     <p class="my-5">
       <strong class="text-xs font-light block font-medium mb-1">Grupo:</strong>
-      <%= visitante.nome_grupo %>
+      <%= visitante.grupo.try(:name) if visitante.grupo.is_a?(Grupo) %>
     </p>
 
     <p class="my-5">

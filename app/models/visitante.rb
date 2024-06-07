@@ -1,5 +1,7 @@
 class Visitante < ApplicationRecord
 
+    belongs_to :grupo
+
     before_validation :sanitize_telefone
 
     validate :validate_unique_telefone

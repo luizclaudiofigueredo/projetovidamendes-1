@@ -23,7 +23,7 @@ storage/*
 config/master.key
 
 # Ignore database yaml
-config/database.yml
+/config/database.yml
 
 # Ignore specific rails logs
 log/development.log
