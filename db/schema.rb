@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_04_134304) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_07_161207) do
   create_table "active_storage_attachments", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -85,6 +85,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_04_134304) do
     t.text "observacoes"
     t.index ["pessoa_id"], name: "index_eventos_on_pessoa_id"
     t.index ["tipo_evento_id"], name: "index_eventos_on_tipo_evento_id"
+  end
+
+  create_table "grupos", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "membros", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
