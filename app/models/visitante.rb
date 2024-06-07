@@ -5,7 +5,7 @@ class Visitante < ApplicationRecord
     before_validation :sanitize_telefone
 
     validate :validate_unique_telefone
-    validates :nome, :telefone, :grupo, presence: true   
+    validates :nome, :telefone, presence: true   
     validate :unique_nome_completo
      
     def nome_completo

@@ -5521,3 +5521,948 @@ I, [2024-06-07T12:47:36.604874 #251008]  INFO -- : [8c8ea7fd-4aaf-4712-8bf8-9b11
 I, [2024-06-07T12:47:36.605834 #251008]  INFO -- : [8c8ea7fd-4aaf-4712-8bf8-9b111aacb4b8] Processing by VisitantesController#index as HTML
 I, [2024-06-07T12:47:36.643453 #251008]  INFO -- : [8c8ea7fd-4aaf-4712-8bf8-9b111aacb4b8]   Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 13539)
 I, [2024-06-07T12:47:36.643716 #251008]  INFO -- : [8c8ea7fd-4aaf-4712-8bf8-9b111aacb4b8] Completed 200 OK in 38ms (Views: 26.3ms | ActiveRecord: 3.3ms | Allocations: 14236)
+I, [2024-06-07T13:13:18.055779 #254672]  INFO -- : [36eb79d3-4167-4ad3-b2a0-bcf8fc907413] Started GET "/grupos" for 170.233.105.105 at 2024-06-07 13:13:18 -0300
+I, [2024-06-07T13:13:18.061392 #254672]  INFO -- : [36eb79d3-4167-4ad3-b2a0-bcf8fc907413] Processing by GruposController#index as HTML
+W, [2024-06-07T13:13:18.136063 #254672]  WARN -- : [36eb79d3-4167-4ad3-b2a0-bcf8fc907413] Importmap skipped missing path: inputmask.min.js
+W, [2024-06-07T13:13:18.137562 #254672]  WARN -- : [36eb79d3-4167-4ad3-b2a0-bcf8fc907413] Importmap skipped missing path: inputmask.min.js
+I, [2024-06-07T13:13:18.152642 #254672]  INFO -- : [36eb79d3-4167-4ad3-b2a0-bcf8fc907413]   Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 5595)
+I, [2024-06-07T13:13:18.153367 #254672]  INFO -- : [36eb79d3-4167-4ad3-b2a0-bcf8fc907413] Completed 200 OK in 92ms (Views: 26.7ms | ActiveRecord: 12.0ms | Allocations: 19315)
+I, [2024-06-07T13:13:21.394856 #254672]  INFO -- : [f3c484c3-c73d-4c27-a612-5430effbd23b] Started GET "/grupos/new" for 170.233.105.105 at 2024-06-07 13:13:21 -0300
+I, [2024-06-07T13:13:21.396292 #254672]  INFO -- : [f3c484c3-c73d-4c27-a612-5430effbd23b] Processing by GruposController#new as HTML
+I, [2024-06-07T13:13:21.414010 #254672]  INFO -- : [f3c484c3-c73d-4c27-a612-5430effbd23b]   Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2328)
+I, [2024-06-07T13:13:21.414445 #254672]  INFO -- : [f3c484c3-c73d-4c27-a612-5430effbd23b] Completed 200 OK in 18ms (Views: 7.4ms | ActiveRecord: 3.3ms | Allocations: 5471)
+I, [2024-06-07T13:13:27.688742 #254672]  INFO -- : [ffb66c8b-ccaa-4f00-9565-531db87b3e72] Started POST "/grupos" for 170.233.105.105 at 2024-06-07 13:13:27 -0300
+I, [2024-06-07T13:13:27.689922 #254672]  INFO -- : [ffb66c8b-ccaa-4f00-9565-531db87b3e72] Processing by GruposController#create as TURBO_STREAM
+I, [2024-06-07T13:13:27.690006 #254672]  INFO -- : [ffb66c8b-ccaa-4f00-9565-531db87b3e72]   Parameters: {"authenticity_token"=>"[FILTERED]", "grupo"=>{"name"=>"Criança"}, "commit"=>"Criar Grupo"}
+I, [2024-06-07T13:13:27.702709 #254672]  INFO -- : [ffb66c8b-ccaa-4f00-9565-531db87b3e72] Redirected to https://consolidacao.projetovidamendes.com/grupos/1
+I, [2024-06-07T13:13:27.702880 #254672]  INFO -- : [ffb66c8b-ccaa-4f00-9565-531db87b3e72] Completed 302 Found in 13ms (ActiveRecord: 3.7ms | Allocations: 1757)
+I, [2024-06-07T13:13:27.857831 #254672]  INFO -- : [2f099be8-43ce-42b5-afc8-6a3237580091] Started GET "/grupos/1" for 170.233.105.105 at 2024-06-07 13:13:27 -0300
+I, [2024-06-07T13:13:27.858919 #254672]  INFO -- : [2f099be8-43ce-42b5-afc8-6a3237580091] Processing by GruposController#show as TURBO_STREAM
+I, [2024-06-07T13:13:27.858980 #254672]  INFO -- : [2f099be8-43ce-42b5-afc8-6a3237580091]   Parameters: {"id"=>"1"}
+I, [2024-06-07T13:13:27.868284 #254672]  INFO -- : [2f099be8-43ce-42b5-afc8-6a3237580091]   Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1613)
+I, [2024-06-07T13:13:27.868530 #254672]  INFO -- : [2f099be8-43ce-42b5-afc8-6a3237580091] Completed 200 OK in 9ms (Views: 4.8ms | ActiveRecord: 1.0ms | Allocations: 2761)
+I, [2024-06-07T13:13:29.489785 #254672]  INFO -- : [703c01d4-c0f9-4af4-8335-e13b2d9f560c] Started GET "/grupos/1/edit" for 170.233.105.105 at 2024-06-07 13:13:29 -0300
+I, [2024-06-07T13:13:29.490820 #254672]  INFO -- : [703c01d4-c0f9-4af4-8335-e13b2d9f560c] Processing by GruposController#edit as HTML
+I, [2024-06-07T13:13:29.490890 #254672]  INFO -- : [703c01d4-c0f9-4af4-8335-e13b2d9f560c]   Parameters: {"id"=>"1"}
+I, [2024-06-07T13:13:29.499935 #254672]  INFO -- : [703c01d4-c0f9-4af4-8335-e13b2d9f560c]   Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1551)
+I, [2024-06-07T13:13:29.500279 #254672]  INFO -- : [703c01d4-c0f9-4af4-8335-e13b2d9f560c] Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.9ms | Allocations: 2356)
+I, [2024-06-07T13:13:29.787836 #254672]  INFO -- : [3cbd8230-d5af-4f98-860c-bc66c6759078] Started GET "/grupos" for 170.233.105.105 at 2024-06-07 13:13:29 -0300
+I, [2024-06-07T13:13:29.788930 #254672]  INFO -- : [3cbd8230-d5af-4f98-860c-bc66c6759078] Processing by GruposController#index as HTML
+I, [2024-06-07T13:13:29.795219 #254672]  INFO -- : [3cbd8230-d5af-4f98-860c-bc66c6759078]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1001)
+I, [2024-06-07T13:13:29.795578 #254672]  INFO -- : [3cbd8230-d5af-4f98-860c-bc66c6759078] Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.8ms | Allocations: 1622)
+I, [2024-06-07T13:13:30.560542 #254672]  INFO -- : [fe94ccb1-ef12-46d6-ac54-4fece306a6d7] Started GET "/grupos" for 170.233.105.105 at 2024-06-07 13:13:30 -0300
+I, [2024-06-07T13:13:30.561501 #254672]  INFO -- : [fe94ccb1-ef12-46d6-ac54-4fece306a6d7] Processing by GruposController#index as HTML
+I, [2024-06-07T13:13:30.568329 #254672]  INFO -- : [fe94ccb1-ef12-46d6-ac54-4fece306a6d7]   Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 999)
+I, [2024-06-07T13:13:30.568657 #254672]  INFO -- : [fe94ccb1-ef12-46d6-ac54-4fece306a6d7] Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.8ms | Allocations: 1635)
+I, [2024-06-07T13:13:31.363965 #254672]  INFO -- : [c1873f04-349f-496e-85d8-34dbb2436e96] Started GET "/grupos/new" for 170.233.105.105 at 2024-06-07 13:13:31 -0300
+I, [2024-06-07T13:13:31.365449 #254672]  INFO -- : [c1873f04-349f-496e-85d8-34dbb2436e96] Processing by GruposController#new as HTML
+I, [2024-06-07T13:13:31.394125 #254672]  INFO -- : [c1873f04-349f-496e-85d8-34dbb2436e96]   Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 1332)
+I, [2024-06-07T13:13:31.394492 #254672]  INFO -- : [c1873f04-349f-496e-85d8-34dbb2436e96] Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.5ms | Allocations: 1985)
+I, [2024-06-07T13:13:36.104458 #254672]  INFO -- : [08ff3ae8-5aef-47b5-96f0-00cb8b8ddfcc] Started POST "/grupos" for 170.233.105.105 at 2024-06-07 13:13:36 -0300
+I, [2024-06-07T13:13:36.105705 #254672]  INFO -- : [08ff3ae8-5aef-47b5-96f0-00cb8b8ddfcc] Processing by GruposController#create as TURBO_STREAM
+I, [2024-06-07T13:13:36.105808 #254672]  INFO -- : [08ff3ae8-5aef-47b5-96f0-00cb8b8ddfcc]   Parameters: {"authenticity_token"=>"[FILTERED]", "grupo"=>{"name"=>"Adolescente"}, "commit"=>"Criar Grupo"}
+I, [2024-06-07T13:13:36.118423 #254672]  INFO -- : [08ff3ae8-5aef-47b5-96f0-00cb8b8ddfcc] Redirected to https://consolidacao.projetovidamendes.com/grupos/2
+I, [2024-06-07T13:13:36.118688 #254672]  INFO -- : [08ff3ae8-5aef-47b5-96f0-00cb8b8ddfcc] Completed 302 Found in 13ms (ActiveRecord: 5.6ms | Allocations: 894)
+I, [2024-06-07T13:13:36.274984 #254672]  INFO -- : [a1543690-91f8-4962-82dd-0345f607a411] Started GET "/grupos/2" for 170.233.105.105 at 2024-06-07 13:13:36 -0300
+I, [2024-06-07T13:13:36.276454 #254672]  INFO -- : [a1543690-91f8-4962-82dd-0345f607a411] Processing by GruposController#show as TURBO_STREAM
+I, [2024-06-07T13:13:36.276551 #254672]  INFO -- : [a1543690-91f8-4962-82dd-0345f607a411]   Parameters: {"id"=>"2"}
+I, [2024-06-07T13:13:36.282799 #254672]  INFO -- : [a1543690-91f8-4962-82dd-0345f607a411]   Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1016)
+I, [2024-06-07T13:13:36.283085 #254672]  INFO -- : [a1543690-91f8-4962-82dd-0345f607a411] Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.8ms | Allocations: 1772)
+I, [2024-06-07T13:13:37.211496 #254672]  INFO -- : [c4c66b1b-7b9a-48fa-80ca-1fe9cc0cc45e] Started GET "/grupos" for 170.233.105.105 at 2024-06-07 13:13:37 -0300
+I, [2024-06-07T13:13:37.212572 #254672]  INFO -- : [c4c66b1b-7b9a-48fa-80ca-1fe9cc0cc45e] Processing by GruposController#index as HTML
+I, [2024-06-07T13:13:37.219139 #254672]  INFO -- : [c4c66b1b-7b9a-48fa-80ca-1fe9cc0cc45e]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1079)
+I, [2024-06-07T13:13:37.222439 #254672]  INFO -- : [c4c66b1b-7b9a-48fa-80ca-1fe9cc0cc45e] Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.9ms | Allocations: 1724)
+I, [2024-06-07T13:13:38.624791 #254672]  INFO -- : [52ddc81e-0e6e-418e-adcb-fc34610aadf5] Started GET "/grupos/new" for 170.233.105.105 at 2024-06-07 13:13:38 -0300
+I, [2024-06-07T13:13:38.625934 #254672]  INFO -- : [52ddc81e-0e6e-418e-adcb-fc34610aadf5] Processing by GruposController#new as HTML
+I, [2024-06-07T13:13:38.632100 #254672]  INFO -- : [52ddc81e-0e6e-418e-adcb-fc34610aadf5]   Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1332)
+I, [2024-06-07T13:13:38.632389 #254672]  INFO -- : [52ddc81e-0e6e-418e-adcb-fc34610aadf5] Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.5ms | Allocations: 1973)
+I, [2024-06-07T13:13:43.575207 #254672]  INFO -- : [c4ec3cf3-7c09-41fe-a933-20324b713210] Started POST "/grupos" for 170.233.105.105 at 2024-06-07 13:13:43 -0300
+I, [2024-06-07T13:13:43.576155 #254672]  INFO -- : [c4ec3cf3-7c09-41fe-a933-20324b713210] Processing by GruposController#create as TURBO_STREAM
+I, [2024-06-07T13:13:43.576311 #254672]  INFO -- : [c4ec3cf3-7c09-41fe-a933-20324b713210]   Parameters: {"authenticity_token"=>"[FILTERED]", "grupo"=>{"name"=>"Jovem"}, "commit"=>"Criar Grupo"}
+I, [2024-06-07T13:13:43.583574 #254672]  INFO -- : [c4ec3cf3-7c09-41fe-a933-20324b713210] Redirected to https://consolidacao.projetovidamendes.com/grupos/3
+I, [2024-06-07T13:13:43.583749 #254672]  INFO -- : [c4ec3cf3-7c09-41fe-a933-20324b713210] Completed 302 Found in 7ms (ActiveRecord: 3.5ms | Allocations: 921)
+I, [2024-06-07T13:13:43.738896 #254672]  INFO -- : [ebee6d7b-a08a-441a-98a2-e1427b59581f] Started GET "/grupos/3" for 170.233.105.105 at 2024-06-07 13:13:43 -0300
+I, [2024-06-07T13:13:43.740040 #254672]  INFO -- : [ebee6d7b-a08a-441a-98a2-e1427b59581f] Processing by GruposController#show as TURBO_STREAM
+I, [2024-06-07T13:13:43.740114 #254672]  INFO -- : [ebee6d7b-a08a-441a-98a2-e1427b59581f]   Parameters: {"id"=>"3"}
+I, [2024-06-07T13:13:43.746022 #254672]  INFO -- : [ebee6d7b-a08a-441a-98a2-e1427b59581f]   Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1016)
+I, [2024-06-07T13:13:43.746349 #254672]  INFO -- : [ebee6d7b-a08a-441a-98a2-e1427b59581f] Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 1745)
+I, [2024-06-07T13:13:44.505626 #254672]  INFO -- : [aec7a991-acb5-4184-850a-6eaa1de708f4] Started GET "/grupos/3/edit" for 170.233.105.105 at 2024-06-07 13:13:44 -0300
+I, [2024-06-07T13:13:44.506599 #254672]  INFO -- : [aec7a991-acb5-4184-850a-6eaa1de708f4] Processing by GruposController#edit as HTML
+I, [2024-06-07T13:13:44.506695 #254672]  INFO -- : [aec7a991-acb5-4184-850a-6eaa1de708f4]   Parameters: {"id"=>"3"}
+I, [2024-06-07T13:13:44.556983 #254672]  INFO -- : [aec7a991-acb5-4184-850a-6eaa1de708f4]   Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 1382)
+I, [2024-06-07T13:13:44.557302 #254672]  INFO -- : [aec7a991-acb5-4184-850a-6eaa1de708f4] Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.8ms | Allocations: 2112)
+I, [2024-06-07T13:13:44.800885 #254672]  INFO -- : [ed220b36-e1ea-4da0-b111-35ad5800e83e] Started GET "/grupos" for 170.233.105.105 at 2024-06-07 13:13:44 -0300
+I, [2024-06-07T13:13:44.802031 #254672]  INFO -- : [ed220b36-e1ea-4da0-b111-35ad5800e83e] Processing by GruposController#index as HTML
+I, [2024-06-07T13:13:44.808096 #254672]  INFO -- : [ed220b36-e1ea-4da0-b111-35ad5800e83e]   Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1159)
+I, [2024-06-07T13:13:44.808386 #254672]  INFO -- : [ed220b36-e1ea-4da0-b111-35ad5800e83e] Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.9ms | Allocations: 1801)
+I, [2024-06-07T13:13:46.122171 #254672]  INFO -- : [2395a1d0-a76a-46fa-a6f9-cf6c9bc1e1ae] Started GET "/grupos/new" for 170.233.105.105 at 2024-06-07 13:13:46 -0300
+I, [2024-06-07T13:13:46.123082 #254672]  INFO -- : [2395a1d0-a76a-46fa-a6f9-cf6c9bc1e1ae] Processing by GruposController#new as HTML
+I, [2024-06-07T13:13:46.128903 #254672]  INFO -- : [2395a1d0-a76a-46fa-a6f9-cf6c9bc1e1ae]   Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1332)
+I, [2024-06-07T13:13:46.129160 #254672]  INFO -- : [2395a1d0-a76a-46fa-a6f9-cf6c9bc1e1ae] Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 1985)
+I, [2024-06-07T13:13:50.736820 #254672]  INFO -- : [e98c2442-a595-46cb-8154-0be0d78fa846] Started POST "/grupos" for 170.233.105.105 at 2024-06-07 13:13:50 -0300
+I, [2024-06-07T13:13:50.737954 #254672]  INFO -- : [e98c2442-a595-46cb-8154-0be0d78fa846] Processing by GruposController#create as TURBO_STREAM
+I, [2024-06-07T13:13:50.738031 #254672]  INFO -- : [e98c2442-a595-46cb-8154-0be0d78fa846]   Parameters: {"authenticity_token"=>"[FILTERED]", "grupo"=>{"name"=>"Adulto"}, "commit"=>"Criar Grupo"}
+I, [2024-06-07T13:13:50.750241 #254672]  INFO -- : [e98c2442-a595-46cb-8154-0be0d78fa846] Redirected to https://consolidacao.projetovidamendes.com/grupos/4
+I, [2024-06-07T13:13:50.750437 #254672]  INFO -- : [e98c2442-a595-46cb-8154-0be0d78fa846] Completed 302 Found in 12ms (ActiveRecord: 6.3ms | Allocations: 916)
+I, [2024-06-07T13:13:50.904840 #254672]  INFO -- : [d4e0917a-fd8b-4163-ae90-92b813c5f554] Started GET "/grupos/4" for 170.233.105.105 at 2024-06-07 13:13:50 -0300
+I, [2024-06-07T13:13:50.905805 #254672]  INFO -- : [d4e0917a-fd8b-4163-ae90-92b813c5f554] Processing by GruposController#show as TURBO_STREAM
+I, [2024-06-07T13:13:50.905875 #254672]  INFO -- : [d4e0917a-fd8b-4163-ae90-92b813c5f554]   Parameters: {"id"=>"4"}
+I, [2024-06-07T13:13:50.911503 #254672]  INFO -- : [d4e0917a-fd8b-4163-ae90-92b813c5f554]   Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1016)
+I, [2024-06-07T13:13:50.911771 #254672]  INFO -- : [d4e0917a-fd8b-4163-ae90-92b813c5f554] Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 0.8ms | Allocations: 1764)
+I, [2024-06-07T13:13:51.920842 #254672]  INFO -- : [2b04eae5-577c-4f8a-b047-2097e9c707b9] Started GET "/grupos" for 170.233.105.105 at 2024-06-07 13:13:51 -0300
+I, [2024-06-07T13:13:51.922192 #254672]  INFO -- : [2b04eae5-577c-4f8a-b047-2097e9c707b9] Processing by GruposController#index as HTML
+I, [2024-06-07T13:13:51.928675 #254672]  INFO -- : [2b04eae5-577c-4f8a-b047-2097e9c707b9]   Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1240)
+I, [2024-06-07T13:13:51.928991 #254672]  INFO -- : [2b04eae5-577c-4f8a-b047-2097e9c707b9] Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.9ms | Allocations: 1885)
+I, [2024-06-07T13:13:53.464025 #254672]  INFO -- : [5cf937c4-aca1-448c-bfb8-c9f0dca77159] Started GET "/grupos/new" for 170.233.105.105 at 2024-06-07 13:13:53 -0300
+I, [2024-06-07T13:13:53.465154 #254672]  INFO -- : [5cf937c4-aca1-448c-bfb8-c9f0dca77159] Processing by GruposController#new as HTML
+I, [2024-06-07T13:13:53.471546 #254672]  INFO -- : [5cf937c4-aca1-448c-bfb8-c9f0dca77159]   Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1332)
+I, [2024-06-07T13:13:53.471860 #254672]  INFO -- : [5cf937c4-aca1-448c-bfb8-c9f0dca77159] Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 1982)
+I, [2024-06-07T13:13:59.332621 #254672]  INFO -- : [6ce9c484-52ce-4adf-8119-8ab8435decec] Started POST "/grupos" for 170.233.105.105 at 2024-06-07 13:13:59 -0300
+I, [2024-06-07T13:13:59.333727 #254672]  INFO -- : [6ce9c484-52ce-4adf-8119-8ab8435decec] Processing by GruposController#create as TURBO_STREAM
+I, [2024-06-07T13:13:59.333803 #254672]  INFO -- : [6ce9c484-52ce-4adf-8119-8ab8435decec]   Parameters: {"authenticity_token"=>"[FILTERED]", "grupo"=>{"name"=>"Idoso"}, "commit"=>"Criar Grupo"}
+I, [2024-06-07T13:13:59.340137 #254672]  INFO -- : [6ce9c484-52ce-4adf-8119-8ab8435decec] Redirected to https://consolidacao.projetovidamendes.com/grupos/5
+I, [2024-06-07T13:13:59.340379 #254672]  INFO -- : [6ce9c484-52ce-4adf-8119-8ab8435decec] Completed 302 Found in 6ms (ActiveRecord: 2.7ms | Allocations: 903)
+I, [2024-06-07T13:13:59.496948 #254672]  INFO -- : [41da4141-37b3-4b18-9959-b35ae6fd90dd] Started GET "/grupos/5" for 170.233.105.105 at 2024-06-07 13:13:59 -0300
+I, [2024-06-07T13:13:59.498029 #254672]  INFO -- : [41da4141-37b3-4b18-9959-b35ae6fd90dd] Processing by GruposController#show as TURBO_STREAM
+I, [2024-06-07T13:13:59.498100 #254672]  INFO -- : [41da4141-37b3-4b18-9959-b35ae6fd90dd]   Parameters: {"id"=>"5"}
+I, [2024-06-07T13:13:59.504455 #254672]  INFO -- : [41da4141-37b3-4b18-9959-b35ae6fd90dd]   Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1016)
+I, [2024-06-07T13:13:59.504762 #254672]  INFO -- : [41da4141-37b3-4b18-9959-b35ae6fd90dd] Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 1743)
+I, [2024-06-07T13:14:00.947040 #254672]  INFO -- : [6fd5a3d1-3dbc-4110-9649-370fde64fead] Started GET "/grupos" for 170.233.105.105 at 2024-06-07 13:14:00 -0300
+I, [2024-06-07T13:14:00.948146 #254672]  INFO -- : [6fd5a3d1-3dbc-4110-9649-370fde64fead] Processing by GruposController#index as HTML
+I, [2024-06-07T13:14:00.955071 #254672]  INFO -- : [6fd5a3d1-3dbc-4110-9649-370fde64fead]   Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1320)
+I, [2024-06-07T13:14:00.955443 #254672]  INFO -- : [6fd5a3d1-3dbc-4110-9649-370fde64fead] Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 0.9ms | Allocations: 1950)
+I, [2024-06-07T13:14:04.170802 #254672]  INFO -- : [0c1d0d20-35ea-4c44-9c03-7bfc3da6fbc9] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 13:14:04 -0300
+I, [2024-06-07T13:14:04.171999 #254672]  INFO -- : [0c1d0d20-35ea-4c44-9c03-7bfc3da6fbc9] Processing by VisitantesController#index as HTML
+I, [2024-06-07T13:14:04.216852 #254672]  INFO -- : [0c1d0d20-35ea-4c44-9c03-7bfc3da6fbc9]   Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 20115)
+I, [2024-06-07T13:14:04.217167 #254672]  INFO -- : [0c1d0d20-35ea-4c44-9c03-7bfc3da6fbc9] Completed 200 OK in 45ms (Views: 33.9ms | ActiveRecord: 5.9ms | Allocations: 21939)
+I, [2024-06-07T13:14:05.313905 #254672]  INFO -- : [152cedd3-7920-4c33-b980-053627f3849b] Started GET "/visitantes/new" for 170.233.105.105 at 2024-06-07 13:14:05 -0300
+I, [2024-06-07T13:14:05.314895 #254672]  INFO -- : [152cedd3-7920-4c33-b980-053627f3849b] Processing by VisitantesController#new as HTML
+I, [2024-06-07T13:14:05.320494 #254672]  INFO -- : [152cedd3-7920-4c33-b980-053627f3849b]   Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 807)
+I, [2024-06-07T13:14:05.320795 #254672]  INFO -- : [152cedd3-7920-4c33-b980-053627f3849b] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms | Allocations: 1554)
+F, [2024-06-07T13:14:05.344314 #254672] FATAL -- : [152cedd3-7920-4c33-b980-053627f3849b]   
+[152cedd3-7920-4c33-b980-053627f3849b] ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: visitante, class: "contents") do |form| %>
+  <% if visitante.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+
+      <ul>
+        <% visitante.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+  </div>
+
+  <div class="my-5">
+      <%= form.label :grupo %>
+      <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+  </div>  
+
+ <div class="my-5">
+    <%= form.label :observacoes %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+):
+[152cedd3-7920-4c33-b980-053627f3849b] 1:    <%= form_with(model: visitante, class: "contents") do |form| %>
+[152cedd3-7920-4c33-b980-053627f3849b] 2:      <% if visitante.errors.any? %>
+[152cedd3-7920-4c33-b980-053627f3849b] 3:        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+[152cedd3-7920-4c33-b980-053627f3849b] 4:          <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+[152cedd3-7920-4c33-b980-053627f3849b] 5:    
+[152cedd3-7920-4c33-b980-053627f3849b] 6:          <ul>
+[152cedd3-7920-4c33-b980-053627f3849b] 7:            <% visitante.errors.each do |error| %>
+[152cedd3-7920-4c33-b980-053627f3849b] 8:              <li><%= error.full_message %></li>
+[152cedd3-7920-4c33-b980-053627f3849b] 9:            <% end %>
+[152cedd3-7920-4c33-b980-053627f3849b] 10:          </ul>
+[152cedd3-7920-4c33-b980-053627f3849b] 11:        </div>
+[152cedd3-7920-4c33-b980-053627f3849b] 12:      <% end %>
+[152cedd3-7920-4c33-b980-053627f3849b] 13:    
+[152cedd3-7920-4c33-b980-053627f3849b] 14:      <div class="my-5">
+[152cedd3-7920-4c33-b980-053627f3849b] 15:        <%= form.label :nome %>
+[152cedd3-7920-4c33-b980-053627f3849b] 16:        <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[152cedd3-7920-4c33-b980-053627f3849b] 17:      </div>
+[152cedd3-7920-4c33-b980-053627f3849b] 18:    
+[152cedd3-7920-4c33-b980-053627f3849b] 19:      <div class="my-5">
+[152cedd3-7920-4c33-b980-053627f3849b] 20:        <%= form.label :sobrenome %>
+[152cedd3-7920-4c33-b980-053627f3849b] 21:        <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[152cedd3-7920-4c33-b980-053627f3849b] 22:      </div>
+[152cedd3-7920-4c33-b980-053627f3849b] 23:    
+[152cedd3-7920-4c33-b980-053627f3849b] 24:      <div class="my-5">
+[152cedd3-7920-4c33-b980-053627f3849b] 25:        <%= form.label :telefone %>
+[152cedd3-7920-4c33-b980-053627f3849b] 26:        <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+[152cedd3-7920-4c33-b980-053627f3849b] 27:      </div>
+[152cedd3-7920-4c33-b980-053627f3849b] 28:    
+[152cedd3-7920-4c33-b980-053627f3849b] 29:      <div class="my-5">
+[152cedd3-7920-4c33-b980-053627f3849b] 30:          <%= form.label :grupo %>
+[152cedd3-7920-4c33-b980-053627f3849b] 31:          <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+[152cedd3-7920-4c33-b980-053627f3849b] 32:      </div>  
+[152cedd3-7920-4c33-b980-053627f3849b] 33:    
+[152cedd3-7920-4c33-b980-053627f3849b] 34:     <div class="my-5">
+[152cedd3-7920-4c33-b980-053627f3849b] 35:        <%= form.label :observacoes %>
+[152cedd3-7920-4c33-b980-053627f3849b] 36:        <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[152cedd3-7920-4c33-b980-053627f3849b] 37:      </div>
+[152cedd3-7920-4c33-b980-053627f3849b] 38:    
+[152cedd3-7920-4c33-b980-053627f3849b] 39:      <div class="inline">
+[152cedd3-7920-4c33-b980-053627f3849b] 40:        <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+[152cedd3-7920-4c33-b980-053627f3849b] 41:      </div>
+[152cedd3-7920-4c33-b980-053627f3849b] 42:    <% end %>
+[152cedd3-7920-4c33-b980-053627f3849b]   
+[152cedd3-7920-4c33-b980-053627f3849b] app/views/visitantes/_form.html.erb:31: syntax error, unexpected ',', expecting ')'
+[152cedd3-7920-4c33-b980-053627f3849b] app/views/visitantes/new.html.erb:4
+I, [2024-06-07T14:02:56.506296 #254672]  INFO -- : [a5e1d357-f978-488b-9a9a-8eccc33ed8ac] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 14:02:56 -0300
+I, [2024-06-07T14:02:56.510370 #254672]  INFO -- : [a5e1d357-f978-488b-9a9a-8eccc33ed8ac] Processing by VisitantesController#index as HTML
+I, [2024-06-07T14:02:56.515825 #254672]  INFO -- : [a5e1d357-f978-488b-9a9a-8eccc33ed8ac] Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 223)
+I, [2024-06-07T14:02:56.683827 #254672]  INFO -- : [6851c96b-f8f1-4fa0-a845-d7eb20e0b2d2] Started GET "/usuarios/sign_in" for 170.233.105.105 at 2024-06-07 14:02:56 -0300
+I, [2024-06-07T14:02:56.685452 #254672]  INFO -- : [6851c96b-f8f1-4fa0-a845-d7eb20e0b2d2] Processing by Devise::SessionsController#new as HTML
+I, [2024-06-07T14:02:56.702252 #254672]  INFO -- : [6851c96b-f8f1-4fa0-a845-d7eb20e0b2d2]   Rendered layout layouts/devise.html.erb (Duration: 6.4ms | Allocations: 1416)
+I, [2024-06-07T14:02:56.702624 #254672]  INFO -- : [6851c96b-f8f1-4fa0-a845-d7eb20e0b2d2] Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 2565)
+I, [2024-06-07T14:02:58.025340 #254672]  INFO -- : [ac789568-3119-401d-878a-1f3d5c748c01] Started GET "/usuarios/password/new" for 170.233.105.105 at 2024-06-07 14:02:58 -0300
+I, [2024-06-07T14:02:58.026511 #254672]  INFO -- : [ac789568-3119-401d-878a-1f3d5c748c01] Processing by Devise::PasswordsController#new as HTML
+I, [2024-06-07T14:02:58.034780 #254672]  INFO -- : [ac789568-3119-401d-878a-1f3d5c748c01]   Rendered layout layouts/devise.html.erb (Duration: 5.8ms | Allocations: 2079)
+I, [2024-06-07T14:02:58.035043 #254672]  INFO -- : [ac789568-3119-401d-878a-1f3d5c748c01] Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 2884)
+I, [2024-06-07T14:02:59.391808 #254672]  INFO -- : [3c7ca194-b00d-4ead-8dd2-9089438b7923] Started POST "/usuarios/sign_in" for 170.233.105.105 at 2024-06-07 14:02:59 -0300
+I, [2024-06-07T14:02:59.393280 #254672]  INFO -- : [3c7ca194-b00d-4ead-8dd2-9089438b7923] Processing by Devise::SessionsController#create as TURBO_STREAM
+I, [2024-06-07T14:02:59.393393 #254672]  INFO -- : [3c7ca194-b00d-4ead-8dd2-9089438b7923]   Parameters: {"authenticity_token"=>"[FILTERED]", "usuario"=>{"email"=>"consolidacao@projetovidamendes.com", "password"=>"[FILTERED]"}}
+I, [2024-06-07T14:02:59.715572 #254672]  INFO -- : [3c7ca194-b00d-4ead-8dd2-9089438b7923] Redirected to https://consolidacao.projetovidamendes.com/visitantes
+I, [2024-06-07T14:02:59.715776 #254672]  INFO -- : [3c7ca194-b00d-4ead-8dd2-9089438b7923] Completed 302 Found in 322ms (ActiveRecord: 6.8ms | Allocations: 2178)
+I, [2024-06-07T14:02:59.881795 #254672]  INFO -- : [4d890b34-55e6-492c-9db3-9966fb299880] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 14:02:59 -0300
+I, [2024-06-07T14:02:59.882815 #254672]  INFO -- : [4d890b34-55e6-492c-9db3-9966fb299880] Processing by VisitantesController#index as TURBO_STREAM
+I, [2024-06-07T14:02:59.910765 #254672]  INFO -- : [4d890b34-55e6-492c-9db3-9966fb299880]   Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 13378)
+I, [2024-06-07T14:02:59.911044 #254672]  INFO -- : [4d890b34-55e6-492c-9db3-9966fb299880] Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 3.1ms | Allocations: 14070)
+I, [2024-06-07T14:03:06.100171 #254672]  INFO -- : [f2f5de35-01b2-4a52-9484-43d2a3cead8e] Started GET "/" for 170.233.105.105 at 2024-06-07 14:03:06 -0300
+I, [2024-06-07T14:03:06.101486 #254672]  INFO -- : [f2f5de35-01b2-4a52-9484-43d2a3cead8e] Processing by WelcomeController#index as HTML
+I, [2024-06-07T14:03:06.142278 #254672]  INFO -- : [f2f5de35-01b2-4a52-9484-43d2a3cead8e]   Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 9580)
+I, [2024-06-07T14:03:06.142704 #254672]  INFO -- : [f2f5de35-01b2-4a52-9484-43d2a3cead8e] Completed 200 OK in 41ms (Views: 24.1ms | ActiveRecord: 11.4ms | Allocations: 11447)
+I, [2024-06-07T14:03:07.352744 #254672]  INFO -- : [5e56c53d-0419-4978-afd0-e58735383bf5] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 14:03:07 -0300
+I, [2024-06-07T14:03:07.353684 #254672]  INFO -- : [5e56c53d-0419-4978-afd0-e58735383bf5] Processing by VisitantesController#index as HTML
+I, [2024-06-07T14:03:07.410645 #254672]  INFO -- : [5e56c53d-0419-4978-afd0-e58735383bf5]   Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 13369)
+I, [2024-06-07T14:03:07.410916 #254672]  INFO -- : [5e56c53d-0419-4978-afd0-e58735383bf5] Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 1.4ms | Allocations: 14036)
+I, [2024-06-07T14:03:08.696980 #254672]  INFO -- : [51df1ea4-ecc8-4e62-9298-08bcb6f9498b] Started GET "/estatisticas" for 170.233.105.105 at 2024-06-07 14:03:08 -0300
+I, [2024-06-07T14:03:08.697995 #254672]  INFO -- : [51df1ea4-ecc8-4e62-9298-08bcb6f9498b] Processing by EstatisticasController#index as HTML
+I, [2024-06-07T14:03:08.727916 #254672]  INFO -- : [51df1ea4-ecc8-4e62-9298-08bcb6f9498b]   Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1895)
+I, [2024-06-07T14:03:08.728296 #254672]  INFO -- : [51df1ea4-ecc8-4e62-9298-08bcb6f9498b] Completed 200 OK in 30ms (Views: 5.8ms | ActiveRecord: 20.2ms | Allocations: 3125)
+I, [2024-06-07T14:03:16.813798 #254672]  INFO -- : [ff22e44f-4c10-4ab7-b772-f9aa20f1bcde] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 14:03:16 -0300
+I, [2024-06-07T14:03:16.814863 #254672]  INFO -- : [ff22e44f-4c10-4ab7-b772-f9aa20f1bcde] Processing by VisitantesController#index as HTML
+I, [2024-06-07T14:03:16.838800 #254672]  INFO -- : [ff22e44f-4c10-4ab7-b772-f9aa20f1bcde]   Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 13369)
+I, [2024-06-07T14:03:16.840287 #254672]  INFO -- : [ff22e44f-4c10-4ab7-b772-f9aa20f1bcde] Completed 200 OK in 24ms (Views: 19.7ms | ActiveRecord: 1.6ms | Allocations: 14044)
+I, [2024-06-07T14:03:21.294897 #254672]  INFO -- : [6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] Started GET "/visitantes/new" for 170.233.105.105 at 2024-06-07 14:03:21 -0300
+I, [2024-06-07T14:03:21.296072 #254672]  INFO -- : [6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] Processing by VisitantesController#new as HTML
+I, [2024-06-07T14:03:21.300956 #254672]  INFO -- : [6c6f2fc8-348f-4e1d-bfa9-d4b944754c15]   Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 579)
+I, [2024-06-07T14:03:21.301218 #254672]  INFO -- : [6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1229)
+F, [2024-06-07T14:03:21.303080 #254672] FATAL -- : [6c6f2fc8-348f-4e1d-bfa9-d4b944754c15]   
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: visitante, class: "contents") do |form| %>
+  <% if visitante.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+
+      <ul>
+        <% visitante.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+  </div>
+
+  <div class="my-5">
+      <%= form.label :grupo %>
+      <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+  </div>  
+
+ <div class="my-5">
+    <%= form.label :observacoes %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+):
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 1:    <%= form_with(model: visitante, class: "contents") do |form| %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 2:      <% if visitante.errors.any? %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 3:        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 4:          <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 5:    
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 6:          <ul>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 7:            <% visitante.errors.each do |error| %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 8:              <li><%= error.full_message %></li>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 9:            <% end %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 10:          </ul>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 11:        </div>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 12:      <% end %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 13:    
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 14:      <div class="my-5">
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 15:        <%= form.label :nome %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 16:        <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 17:      </div>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 18:    
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 19:      <div class="my-5">
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 20:        <%= form.label :sobrenome %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 21:        <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 22:      </div>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 23:    
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 24:      <div class="my-5">
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 25:        <%= form.label :telefone %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 26:        <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 27:      </div>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 28:    
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 29:      <div class="my-5">
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 30:          <%= form.label :grupo %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 31:          <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 32:      </div>  
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 33:    
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 34:     <div class="my-5">
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 35:        <%= form.label :observacoes %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 36:        <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 37:      </div>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 38:    
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 39:      <div class="inline">
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 40:        <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 41:      </div>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] 42:    <% end %>
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15]   
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] app/views/visitantes/_form.html.erb:31: syntax error, unexpected ',', expecting ')'
+[6c6f2fc8-348f-4e1d-bfa9-d4b944754c15] app/views/visitantes/new.html.erb:4
+I, [2024-06-07T14:03:22.974728 #254672]  INFO -- : [883ad506-9907-4fb6-b441-34673b64726b] Started GET "/visitantes/new" for 170.233.105.105 at 2024-06-07 14:03:22 -0300
+I, [2024-06-07T14:03:22.976315 #254672]  INFO -- : [883ad506-9907-4fb6-b441-34673b64726b] Processing by VisitantesController#new as HTML
+I, [2024-06-07T14:03:22.981330 #254672]  INFO -- : [883ad506-9907-4fb6-b441-34673b64726b]   Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 577)
+I, [2024-06-07T14:03:22.981570 #254672]  INFO -- : [883ad506-9907-4fb6-b441-34673b64726b] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 1227)
+F, [2024-06-07T14:03:22.984523 #254672] FATAL -- : [883ad506-9907-4fb6-b441-34673b64726b]   
+[883ad506-9907-4fb6-b441-34673b64726b] ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: visitante, class: "contents") do |form| %>
+  <% if visitante.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+
+      <ul>
+        <% visitante.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+  </div>
+
+  <div class="my-5">
+      <%= form.label :grupo %>
+      <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+  </div>  
+
+ <div class="my-5">
+    <%= form.label :observacoes %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+):
+[883ad506-9907-4fb6-b441-34673b64726b] 1:    <%= form_with(model: visitante, class: "contents") do |form| %>
+[883ad506-9907-4fb6-b441-34673b64726b] 2:      <% if visitante.errors.any? %>
+[883ad506-9907-4fb6-b441-34673b64726b] 3:        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+[883ad506-9907-4fb6-b441-34673b64726b] 4:          <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+[883ad506-9907-4fb6-b441-34673b64726b] 5:    
+[883ad506-9907-4fb6-b441-34673b64726b] 6:          <ul>
+[883ad506-9907-4fb6-b441-34673b64726b] 7:            <% visitante.errors.each do |error| %>
+[883ad506-9907-4fb6-b441-34673b64726b] 8:              <li><%= error.full_message %></li>
+[883ad506-9907-4fb6-b441-34673b64726b] 9:            <% end %>
+[883ad506-9907-4fb6-b441-34673b64726b] 10:          </ul>
+[883ad506-9907-4fb6-b441-34673b64726b] 11:        </div>
+[883ad506-9907-4fb6-b441-34673b64726b] 12:      <% end %>
+[883ad506-9907-4fb6-b441-34673b64726b] 13:    
+[883ad506-9907-4fb6-b441-34673b64726b] 14:      <div class="my-5">
+[883ad506-9907-4fb6-b441-34673b64726b] 15:        <%= form.label :nome %>
+[883ad506-9907-4fb6-b441-34673b64726b] 16:        <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[883ad506-9907-4fb6-b441-34673b64726b] 17:      </div>
+[883ad506-9907-4fb6-b441-34673b64726b] 18:    
+[883ad506-9907-4fb6-b441-34673b64726b] 19:      <div class="my-5">
+[883ad506-9907-4fb6-b441-34673b64726b] 20:        <%= form.label :sobrenome %>
+[883ad506-9907-4fb6-b441-34673b64726b] 21:        <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[883ad506-9907-4fb6-b441-34673b64726b] 22:      </div>
+[883ad506-9907-4fb6-b441-34673b64726b] 23:    
+[883ad506-9907-4fb6-b441-34673b64726b] 24:      <div class="my-5">
+[883ad506-9907-4fb6-b441-34673b64726b] 25:        <%= form.label :telefone %>
+[883ad506-9907-4fb6-b441-34673b64726b] 26:        <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+[883ad506-9907-4fb6-b441-34673b64726b] 27:      </div>
+[883ad506-9907-4fb6-b441-34673b64726b] 28:    
+[883ad506-9907-4fb6-b441-34673b64726b] 29:      <div class="my-5">
+[883ad506-9907-4fb6-b441-34673b64726b] 30:          <%= form.label :grupo %>
+[883ad506-9907-4fb6-b441-34673b64726b] 31:          <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+[883ad506-9907-4fb6-b441-34673b64726b] 32:      </div>  
+[883ad506-9907-4fb6-b441-34673b64726b] 33:    
+[883ad506-9907-4fb6-b441-34673b64726b] 34:     <div class="my-5">
+[883ad506-9907-4fb6-b441-34673b64726b] 35:        <%= form.label :observacoes %>
+[883ad506-9907-4fb6-b441-34673b64726b] 36:        <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[883ad506-9907-4fb6-b441-34673b64726b] 37:      </div>
+[883ad506-9907-4fb6-b441-34673b64726b] 38:    
+[883ad506-9907-4fb6-b441-34673b64726b] 39:      <div class="inline">
+[883ad506-9907-4fb6-b441-34673b64726b] 40:        <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+[883ad506-9907-4fb6-b441-34673b64726b] 41:      </div>
+[883ad506-9907-4fb6-b441-34673b64726b] 42:    <% end %>
+[883ad506-9907-4fb6-b441-34673b64726b]   
+[883ad506-9907-4fb6-b441-34673b64726b] app/views/visitantes/_form.html.erb:31: syntax error, unexpected ',', expecting ')'
+[883ad506-9907-4fb6-b441-34673b64726b] app/views/visitantes/new.html.erb:4
+I, [2024-06-07T14:03:30.309946 #254672]  INFO -- : [e9bbe494-4c44-4131-9146-ff7130521222] Started GET "/visitantes/182/edit" for 170.233.105.105 at 2024-06-07 14:03:30 -0300
+I, [2024-06-07T14:03:30.310852 #254672]  INFO -- : [e9bbe494-4c44-4131-9146-ff7130521222] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T14:03:30.310917 #254672]  INFO -- : [e9bbe494-4c44-4131-9146-ff7130521222]   Parameters: {"id"=>"182"}
+I, [2024-06-07T14:03:30.316683 #254672]  INFO -- : [e9bbe494-4c44-4131-9146-ff7130521222]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 711)
+I, [2024-06-07T14:03:30.316858 #254672]  INFO -- : [e9bbe494-4c44-4131-9146-ff7130521222] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms | Allocations: 1682)
+F, [2024-06-07T14:03:30.319551 #254672] FATAL -- : [e9bbe494-4c44-4131-9146-ff7130521222]   
+[e9bbe494-4c44-4131-9146-ff7130521222] ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: visitante, class: "contents") do |form| %>
+  <% if visitante.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+
+      <ul>
+        <% visitante.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+  </div>
+
+  <div class="my-5">
+      <%= form.label :grupo %>
+      <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+  </div>  
+
+ <div class="my-5">
+    <%= form.label :observacoes %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+):
+[e9bbe494-4c44-4131-9146-ff7130521222] 1:    <%= form_with(model: visitante, class: "contents") do |form| %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 2:      <% if visitante.errors.any? %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 3:        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+[e9bbe494-4c44-4131-9146-ff7130521222] 4:          <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+[e9bbe494-4c44-4131-9146-ff7130521222] 5:    
+[e9bbe494-4c44-4131-9146-ff7130521222] 6:          <ul>
+[e9bbe494-4c44-4131-9146-ff7130521222] 7:            <% visitante.errors.each do |error| %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 8:              <li><%= error.full_message %></li>
+[e9bbe494-4c44-4131-9146-ff7130521222] 9:            <% end %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 10:          </ul>
+[e9bbe494-4c44-4131-9146-ff7130521222] 11:        </div>
+[e9bbe494-4c44-4131-9146-ff7130521222] 12:      <% end %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 13:    
+[e9bbe494-4c44-4131-9146-ff7130521222] 14:      <div class="my-5">
+[e9bbe494-4c44-4131-9146-ff7130521222] 15:        <%= form.label :nome %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 16:        <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 17:      </div>
+[e9bbe494-4c44-4131-9146-ff7130521222] 18:    
+[e9bbe494-4c44-4131-9146-ff7130521222] 19:      <div class="my-5">
+[e9bbe494-4c44-4131-9146-ff7130521222] 20:        <%= form.label :sobrenome %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 21:        <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 22:      </div>
+[e9bbe494-4c44-4131-9146-ff7130521222] 23:    
+[e9bbe494-4c44-4131-9146-ff7130521222] 24:      <div class="my-5">
+[e9bbe494-4c44-4131-9146-ff7130521222] 25:        <%= form.label :telefone %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 26:        <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 27:      </div>
+[e9bbe494-4c44-4131-9146-ff7130521222] 28:    
+[e9bbe494-4c44-4131-9146-ff7130521222] 29:      <div class="my-5">
+[e9bbe494-4c44-4131-9146-ff7130521222] 30:          <%= form.label :grupo %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 31:          <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 32:      </div>  
+[e9bbe494-4c44-4131-9146-ff7130521222] 33:    
+[e9bbe494-4c44-4131-9146-ff7130521222] 34:     <div class="my-5">
+[e9bbe494-4c44-4131-9146-ff7130521222] 35:        <%= form.label :observacoes %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 36:        <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 37:      </div>
+[e9bbe494-4c44-4131-9146-ff7130521222] 38:    
+[e9bbe494-4c44-4131-9146-ff7130521222] 39:      <div class="inline">
+[e9bbe494-4c44-4131-9146-ff7130521222] 40:        <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+[e9bbe494-4c44-4131-9146-ff7130521222] 41:      </div>
+[e9bbe494-4c44-4131-9146-ff7130521222] 42:    <% end %>
+[e9bbe494-4c44-4131-9146-ff7130521222]   
+[e9bbe494-4c44-4131-9146-ff7130521222] app/views/visitantes/_form.html.erb:31: syntax error, unexpected ',', expecting ')'
+[e9bbe494-4c44-4131-9146-ff7130521222] app/views/visitantes/edit.html.erb:4
+I, [2024-06-07T14:03:33.183829 #254672]  INFO -- : [541cb02a-9228-44c4-8e8f-d065cd4c1503] Started GET "/visitantes/182/edit" for 170.233.105.105 at 2024-06-07 14:03:33 -0300
+I, [2024-06-07T14:03:33.184773 #254672]  INFO -- : [541cb02a-9228-44c4-8e8f-d065cd4c1503] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T14:03:33.184845 #254672]  INFO -- : [541cb02a-9228-44c4-8e8f-d065cd4c1503]   Parameters: {"id"=>"182"}
+I, [2024-06-07T14:03:33.200317 #254672]  INFO -- : [541cb02a-9228-44c4-8e8f-d065cd4c1503]   Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 577)
+I, [2024-06-07T14:03:33.200541 #254672]  INFO -- : [541cb02a-9228-44c4-8e8f-d065cd4c1503] Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.8ms | Allocations: 1296)
+F, [2024-06-07T14:03:33.202360 #254672] FATAL -- : [541cb02a-9228-44c4-8e8f-d065cd4c1503]   
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: visitante, class: "contents") do |form| %>
+  <% if visitante.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+
+      <ul>
+        <% visitante.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+  </div>
+
+  <div class="my-5">
+      <%= form.label :grupo %>
+      <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+  </div>  
+
+ <div class="my-5">
+    <%= form.label :observacoes %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+):
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 1:    <%= form_with(model: visitante, class: "contents") do |form| %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 2:      <% if visitante.errors.any? %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 3:        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 4:          <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 5:    
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 6:          <ul>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 7:            <% visitante.errors.each do |error| %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 8:              <li><%= error.full_message %></li>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 9:            <% end %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 10:          </ul>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 11:        </div>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 12:      <% end %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 13:    
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 14:      <div class="my-5">
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 15:        <%= form.label :nome %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 16:        <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 17:      </div>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 18:    
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 19:      <div class="my-5">
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 20:        <%= form.label :sobrenome %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 21:        <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 22:      </div>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 23:    
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 24:      <div class="my-5">
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 25:        <%= form.label :telefone %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 26:        <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 27:      </div>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 28:    
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 29:      <div class="my-5">
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 30:          <%= form.label :grupo %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 31:          <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 32:      </div>  
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 33:    
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 34:     <div class="my-5">
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 35:        <%= form.label :observacoes %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 36:        <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 37:      </div>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 38:    
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 39:      <div class="inline">
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 40:        <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 41:      </div>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] 42:    <% end %>
+[541cb02a-9228-44c4-8e8f-d065cd4c1503]   
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] app/views/visitantes/_form.html.erb:31: syntax error, unexpected ',', expecting ')'
+[541cb02a-9228-44c4-8e8f-d065cd4c1503] app/views/visitantes/edit.html.erb:4
+I, [2024-06-07T14:03:35.712630 #254672]  INFO -- : [a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] Started GET "/visitantes/191/edit" for 170.233.105.105 at 2024-06-07 14:03:35 -0300
+I, [2024-06-07T14:03:35.713799 #254672]  INFO -- : [a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T14:03:35.713873 #254672]  INFO -- : [a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64]   Parameters: {"id"=>"191"}
+I, [2024-06-07T14:03:35.718448 #254672]  INFO -- : [a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64]   Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 579)
+I, [2024-06-07T14:03:35.718641 #254672]  INFO -- : [a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms | Allocations: 1297)
+F, [2024-06-07T14:03:35.720456 #254672] FATAL -- : [a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64]   
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: visitante, class: "contents") do |form| %>
+  <% if visitante.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+
+      <ul>
+        <% visitante.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+  </div>
+
+  <div class="my-5">
+      <%= form.label :grupo %>
+      <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+  </div>  
+
+ <div class="my-5">
+    <%= form.label :observacoes %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+):
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 1:    <%= form_with(model: visitante, class: "contents") do |form| %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 2:      <% if visitante.errors.any? %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 3:        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 4:          <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 5:    
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 6:          <ul>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 7:            <% visitante.errors.each do |error| %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 8:              <li><%= error.full_message %></li>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 9:            <% end %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 10:          </ul>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 11:        </div>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 12:      <% end %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 13:    
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 14:      <div class="my-5">
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 15:        <%= form.label :nome %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 16:        <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 17:      </div>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 18:    
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 19:      <div class="my-5">
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 20:        <%= form.label :sobrenome %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 21:        <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 22:      </div>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 23:    
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 24:      <div class="my-5">
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 25:        <%= form.label :telefone %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 26:        <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 27:      </div>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 28:    
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 29:      <div class="my-5">
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 30:          <%= form.label :grupo %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 31:          <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 32:      </div>  
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 33:    
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 34:     <div class="my-5">
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 35:        <%= form.label :observacoes %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 36:        <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 37:      </div>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 38:    
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 39:      <div class="inline">
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 40:        <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 41:      </div>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] 42:    <% end %>
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64]   
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] app/views/visitantes/_form.html.erb:31: syntax error, unexpected ',', expecting ')'
+[a8ddcbdf-6448-4b2d-8b2f-01df9fb83f64] app/views/visitantes/edit.html.erb:4
+I, [2024-06-07T14:03:41.742023 #254672]  INFO -- : [6e7ec5fc-070a-440f-908e-0c8fbae0d31b] Started GET "/visitantes/new" for 170.233.105.105 at 2024-06-07 14:03:41 -0300
+I, [2024-06-07T14:03:41.743003 #254672]  INFO -- : [6e7ec5fc-070a-440f-908e-0c8fbae0d31b] Processing by VisitantesController#new as HTML
+I, [2024-06-07T14:03:41.747178 #254672]  INFO -- : [6e7ec5fc-070a-440f-908e-0c8fbae0d31b]   Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 577)
+I, [2024-06-07T14:03:41.747496 #254672]  INFO -- : [6e7ec5fc-070a-440f-908e-0c8fbae0d31b] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1227)
+F, [2024-06-07T14:03:41.749789 #254672] FATAL -- : [6e7ec5fc-070a-440f-908e-0c8fbae0d31b]   
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: visitante, class: "contents") do |form| %>
+  <% if visitante.errors.any? %>
+    <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+      <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+
+      <ul>
+        <% visitante.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="my-5">
+    <%= form.label :nome %>
+    <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :sobrenome %>
+    <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+  </div>
+
+  <div class="my-5">
+      <%= form.label :grupo %>
+      <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+  </div>  
+
+ <div class="my-5">
+    <%= form.label :observacoes %>
+    <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+  </div>
+
+  <div class="inline">
+    <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
+):
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 1:    <%= form_with(model: visitante, class: "contents") do |form| %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 2:      <% if visitante.errors.any? %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 3:        <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 4:          <h2><%= pluralize(visitante.errors.count, "error") %> prohibited this visitante from being saved:</h2>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 5:    
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 6:          <ul>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 7:            <% visitante.errors.each do |error| %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 8:              <li><%= error.full_message %></li>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 9:            <% end %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 10:          </ul>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 11:        </div>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 12:      <% end %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 13:    
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 14:      <div class="my-5">
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 15:        <%= form.label :nome %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 16:        <%= form.text_field :nome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 17:      </div>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 18:    
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 19:      <div class="my-5">
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 20:        <%= form.label :sobrenome %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 21:        <%= form.text_field :sobrenome, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 22:      </div>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 23:    
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 24:      <div class="my-5">
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 25:        <%= form.label :telefone %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 26:        <%= form.text_field :telefone, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full", data: { controller: "hello", mask: "(99) 99999-9999" } %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 27:      </div>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 28:    
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 29:      <div class="my-5">
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 30:          <%= form.label :grupo %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 31:          <%= form.collection_select(:visitante, :grupo, Grupo.all, :id, :name, prompt: true), class: "border border-gray-400 p-2 w-full rounded-lg focus:outline-none focus:border-blue-400", required: true %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 32:      </div>  
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 33:    
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 34:     <div class="my-5">
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 35:        <%= form.label :observacoes %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 36:        <%= form.text_area :observacoes, rows: 4, class: "block shadow rounded-md border border-gray-400 rounded-lg focus:outline-none focus:border-blue-400 px-3 py-2 mt-2 w-full" %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 37:      </div>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 38:    
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 39:      <div class="inline">
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 40:        <%= form.submit 'Salvar', class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 41:      </div>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] 42:    <% end %>
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b]   
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] app/views/visitantes/_form.html.erb:31: syntax error, unexpected ',', expecting ')'
+[6e7ec5fc-070a-440f-908e-0c8fbae0d31b] app/views/visitantes/new.html.erb:4
+I, [2024-06-07T14:03:43.868376 #254672]  INFO -- : [da9d7cfb-e446-4853-a79a-1dc5821d21f7] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 14:03:43 -0300
+I, [2024-06-07T14:03:43.869288 #254672]  INFO -- : [da9d7cfb-e446-4853-a79a-1dc5821d21f7] Processing by VisitantesController#index as HTML
+I, [2024-06-07T14:03:43.892765 #254672]  INFO -- : [da9d7cfb-e446-4853-a79a-1dc5821d21f7]   Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 13369)
+I, [2024-06-07T14:03:43.893046 #254672]  INFO -- : [da9d7cfb-e446-4853-a79a-1dc5821d21f7] Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 1.4ms | Allocations: 14049)
+I, [2024-06-07T14:45:09.204846 #260222]  INFO -- : [232af79b-77f6-4dd6-a195-de8df2086116] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 14:45:09 -0300
+I, [2024-06-07T14:45:09.211199 #260222]  INFO -- : [232af79b-77f6-4dd6-a195-de8df2086116] Processing by VisitantesController#index as HTML
+W, [2024-06-07T14:45:09.526049 #260222]  WARN -- : [232af79b-77f6-4dd6-a195-de8df2086116] Importmap skipped missing path: inputmask.min.js
+W, [2024-06-07T14:45:09.528131 #260222]  WARN -- : [232af79b-77f6-4dd6-a195-de8df2086116] Importmap skipped missing path: inputmask.min.js
+I, [2024-06-07T14:45:09.534298 #260222]  INFO -- : [232af79b-77f6-4dd6-a195-de8df2086116]   Rendered layout layouts/application.html.erb (Duration: 163.7ms | Allocations: 25651)
+I, [2024-06-07T14:45:09.534739 #260222]  INFO -- : [232af79b-77f6-4dd6-a195-de8df2086116] Completed 200 OK in 323ms (Views: 164.4ms | ActiveRecord: 64.6ms | Allocations: 39981)
+I, [2024-06-07T14:45:16.255738 #260222]  INFO -- : [59e41865-2609-4043-8d32-395f0ce92f19] Started GET "/visitantes/39/edit" for 170.233.105.105 at 2024-06-07 14:45:16 -0300
+I, [2024-06-07T14:45:16.257098 #260222]  INFO -- : [59e41865-2609-4043-8d32-395f0ce92f19] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T14:45:16.257177 #260222]  INFO -- : [59e41865-2609-4043-8d32-395f0ce92f19]   Parameters: {"id"=>"39"}
+I, [2024-06-07T14:45:16.282431 #260222]  INFO -- : [59e41865-2609-4043-8d32-395f0ce92f19]   Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 6333)
+I, [2024-06-07T14:45:16.282707 #260222]  INFO -- : [59e41865-2609-4043-8d32-395f0ce92f19] Completed 200 OK in 25ms (Views: 14.9ms | ActiveRecord: 5.9ms | Allocations: 7369)
+I, [2024-06-07T14:45:25.437930 #260222]  INFO -- : [cce8f075-19e1-4464-94a8-c33920ceb92f] Started PATCH "/visitantes/39" for 170.233.105.105 at 2024-06-07 14:45:25 -0300
+I, [2024-06-07T14:45:25.439376 #260222]  INFO -- : [cce8f075-19e1-4464-94a8-c33920ceb92f] Processing by VisitantesController#update as TURBO_STREAM
+I, [2024-06-07T14:45:25.439457 #260222]  INFO -- : [cce8f075-19e1-4464-94a8-c33920ceb92f]   Parameters: {"authenticity_token"=>"[FILTERED]", "visitante"=>{"nome"=>"Ademilson", "sobrenome"=>"de Freitas", "telefone"=>"", "grupo"=>"4", "observacoes"=>"Aliançado"}, "commit"=>"Salvar", "id"=>"39"}
+I, [2024-06-07T14:45:25.444882 #260222]  INFO -- : [cce8f075-19e1-4464-94a8-c33920ceb92f] Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 1012)
+F, [2024-06-07T14:45:25.446505 #260222] FATAL -- : [cce8f075-19e1-4464-94a8-c33920ceb92f]   
+[cce8f075-19e1-4464-94a8-c33920ceb92f] ActiveRecord::AssociationTypeMismatch (Grupo(#32080) expected, got "4" which is an instance of String(#2740)):
+[cce8f075-19e1-4464-94a8-c33920ceb92f]   
+[cce8f075-19e1-4464-94a8-c33920ceb92f] app/controllers/visitantes_controller.rb:51:in `block in update'
+[cce8f075-19e1-4464-94a8-c33920ceb92f] app/controllers/visitantes_controller.rb:50:in `update'
+I, [2024-06-07T14:45:30.935757 #260222]  INFO -- : [f461d64e-da3d-4ec9-b524-e77905d10f27] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 14:45:30 -0300
+I, [2024-06-07T14:45:30.936935 #260222]  INFO -- : [f461d64e-da3d-4ec9-b524-e77905d10f27] Processing by VisitantesController#index as HTML
+I, [2024-06-07T14:45:30.968072 #260222]  INFO -- : [f461d64e-da3d-4ec9-b524-e77905d10f27]   Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 14061)
+I, [2024-06-07T14:45:30.968390 #260222]  INFO -- : [f461d64e-da3d-4ec9-b524-e77905d10f27] Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 1.6ms | Allocations: 14756)
+I, [2024-06-07T14:45:35.562395 #260222]  INFO -- : [6a23df8e-d239-443b-b274-cbcc650509c3] Started GET "/visitantes/39/edit" for 170.233.105.105 at 2024-06-07 14:45:35 -0300
+I, [2024-06-07T14:45:35.563520 #260222]  INFO -- : [6a23df8e-d239-443b-b274-cbcc650509c3] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T14:45:35.563593 #260222]  INFO -- : [6a23df8e-d239-443b-b274-cbcc650509c3]   Parameters: {"id"=>"39"}
+I, [2024-06-07T14:45:35.573878 #260222]  INFO -- : [6a23df8e-d239-443b-b274-cbcc650509c3]   Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2484)
+I, [2024-06-07T14:45:35.574193 #260222]  INFO -- : [6a23df8e-d239-443b-b274-cbcc650509c3] Completed 200 OK in 10ms (Views: 5.9ms | ActiveRecord: 1.2ms | Allocations: 3183)
+I, [2024-06-07T14:55:29.740179 #260222]  INFO -- : [7ce2ffe5-36b3-4ea6-bb71-189552120e33] Started GET "/estatisticas" for 170.233.105.105 at 2024-06-07 14:55:29 -0300
+I, [2024-06-07T14:55:29.742563 #260222]  INFO -- : [7ce2ffe5-36b3-4ea6-bb71-189552120e33] Processing by EstatisticasController#index as HTML
+I, [2024-06-07T14:55:29.813156 #260222]  INFO -- : [7ce2ffe5-36b3-4ea6-bb71-189552120e33]   Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 9792)
+I, [2024-06-07T14:55:29.813565 #260222]  INFO -- : [7ce2ffe5-36b3-4ea6-bb71-189552120e33] Completed 200 OK in 71ms (Views: 28.9ms | ActiveRecord: 31.0ms | Allocations: 12081)
+I, [2024-06-07T15:07:27.107492 #261962]  INFO -- : [18acbbf9-178e-4a00-988f-60b5a695cb39] Started GET "/visitantes/39/edit" for 170.233.105.105 at 2024-06-07 15:07:27 -0300
+I, [2024-06-07T15:07:27.123704 #261962]  INFO -- : [18acbbf9-178e-4a00-988f-60b5a695cb39] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T15:07:27.123838 #261962]  INFO -- : [18acbbf9-178e-4a00-988f-60b5a695cb39]   Parameters: {"id"=>"39"}
+W, [2024-06-07T15:07:27.268476 #261962]  WARN -- : [18acbbf9-178e-4a00-988f-60b5a695cb39] Importmap skipped missing path: inputmask.min.js
+W, [2024-06-07T15:07:27.270126 #261962]  WARN -- : [18acbbf9-178e-4a00-988f-60b5a695cb39] Importmap skipped missing path: inputmask.min.js
+I, [2024-06-07T15:07:27.275415 #261962]  INFO -- : [18acbbf9-178e-4a00-988f-60b5a695cb39]   Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 11056)
+I, [2024-06-07T15:07:27.276062 #261962]  INFO -- : [18acbbf9-178e-4a00-988f-60b5a695cb39] Completed 200 OK in 152ms (Views: 41.2ms | ActiveRecord: 27.1ms | Allocations: 31676)
+I, [2024-06-07T15:07:29.612599 #261962]  INFO -- : [049d8cc6-58d6-4339-bf7f-32480ab3563f] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 15:07:29 -0300
+I, [2024-06-07T15:07:29.613798 #261962]  INFO -- : [049d8cc6-58d6-4339-bf7f-32480ab3563f] Processing by VisitantesController#index as HTML
+I, [2024-06-07T15:07:29.701283 #261962]  INFO -- : [049d8cc6-58d6-4339-bf7f-32480ab3563f]   Rendered layout layouts/application.html.erb (Duration: 82.3ms | Allocations: 13939)
+I, [2024-06-07T15:07:29.701568 #261962]  INFO -- : [049d8cc6-58d6-4339-bf7f-32480ab3563f] Completed 200 OK in 88ms (Views: 81.5ms | ActiveRecord: 2.1ms | Allocations: 14773)
+I, [2024-06-07T15:07:31.928429 #261962]  INFO -- : [03429738-168f-4748-a0a4-0c092840fc77] Started GET "/visitantes/39/edit" for 170.233.105.105 at 2024-06-07 15:07:31 -0300
+I, [2024-06-07T15:07:31.929345 #261962]  INFO -- : [03429738-168f-4748-a0a4-0c092840fc77] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T15:07:31.929407 #261962]  INFO -- : [03429738-168f-4748-a0a4-0c092840fc77]   Parameters: {"id"=>"39"}
+I, [2024-06-07T15:07:31.939132 #261962]  INFO -- : [03429738-168f-4748-a0a4-0c092840fc77]   Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2477)
+I, [2024-06-07T15:07:31.939398 #261962]  INFO -- : [03429738-168f-4748-a0a4-0c092840fc77] Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.2ms | Allocations: 3194)
+I, [2024-06-07T15:07:34.949541 #261962]  INFO -- : [1dd8579f-2f90-4b3b-ae41-0ee52b28558e] Started PATCH "/visitantes/39" for 170.233.105.105 at 2024-06-07 15:07:34 -0300
+I, [2024-06-07T15:07:34.950638 #261962]  INFO -- : [1dd8579f-2f90-4b3b-ae41-0ee52b28558e] Processing by VisitantesController#update as TURBO_STREAM
+I, [2024-06-07T15:07:34.950710 #261962]  INFO -- : [1dd8579f-2f90-4b3b-ae41-0ee52b28558e]   Parameters: {"authenticity_token"=>"[FILTERED]", "visitante"=>{"nome"=>"Ademilson", "sobrenome"=>"de Freitas", "telefone"=>"", "grupo"=>"4", "observacoes"=>"Aliançado"}, "commit"=>"Salvar", "id"=>"39"}
+I, [2024-06-07T15:07:34.967623 #261962]  INFO -- : [1dd8579f-2f90-4b3b-ae41-0ee52b28558e]   Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 6074)
+I, [2024-06-07T15:07:34.967936 #261962]  INFO -- : [1dd8579f-2f90-4b3b-ae41-0ee52b28558e] Completed 422 Unprocessable Entity in 17ms (Views: 11.6ms | ActiveRecord: 1.3ms | Allocations: 7409)
+I, [2024-06-07T15:08:35.689305 #262223]  INFO -- : [ccfd4f60-b9ec-4e85-bd15-cd0575d90e92] Started GET "/visitantes/39" for 170.233.105.105 at 2024-06-07 15:08:35 -0300
+I, [2024-06-07T15:08:35.716878 #262223]  INFO -- : [ccfd4f60-b9ec-4e85-bd15-cd0575d90e92] Processing by VisitantesController#show as HTML
+I, [2024-06-07T15:08:35.717003 #262223]  INFO -- : [ccfd4f60-b9ec-4e85-bd15-cd0575d90e92]   Parameters: {"id"=>"39"}
+W, [2024-06-07T15:08:35.929468 #262223]  WARN -- : [ccfd4f60-b9ec-4e85-bd15-cd0575d90e92] Importmap skipped missing path: inputmask.min.js
+W, [2024-06-07T15:08:35.930881 #262223]  WARN -- : [ccfd4f60-b9ec-4e85-bd15-cd0575d90e92] Importmap skipped missing path: inputmask.min.js
+I, [2024-06-07T15:08:35.941639 #262223]  INFO -- : [ccfd4f60-b9ec-4e85-bd15-cd0575d90e92]   Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 6553)
+I, [2024-06-07T15:08:35.942414 #262223]  INFO -- : [ccfd4f60-b9ec-4e85-bd15-cd0575d90e92] Completed 200 OK in 225ms (Views: 38.8ms | ActiveRecord: 35.5ms | Allocations: 27183)
+I, [2024-06-07T15:08:35.979789 #262223]  INFO -- : [f4df40c8-111d-4e52-b327-42d37ed3d8c6] Started PATCH "/visitantes/39" for 170.233.105.105 at 2024-06-07 15:08:35 -0300
+I, [2024-06-07T15:08:35.985485 #262223]  INFO -- : [f4df40c8-111d-4e52-b327-42d37ed3d8c6] Processing by VisitantesController#update as TURBO_STREAM
+I, [2024-06-07T15:08:35.985602 #262223]  INFO -- : [f4df40c8-111d-4e52-b327-42d37ed3d8c6]   Parameters: {"authenticity_token"=>"[FILTERED]", "visitante"=>{"nome"=>"Ademilson", "sobrenome"=>"de Freitas", "telefone"=>"", "grupo"=>"4", "observacoes"=>"Aliançado"}, "commit"=>"Salvar", "id"=>"39"}
+I, [2024-06-07T15:08:36.057761 #262223]  INFO -- : [f4df40c8-111d-4e52-b327-42d37ed3d8c6]   Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 8746)
+I, [2024-06-07T15:08:36.058061 #262223]  INFO -- : [f4df40c8-111d-4e52-b327-42d37ed3d8c6] Completed 422 Unprocessable Entity in 72ms (Views: 53.1ms | ActiveRecord: 3.1ms | Allocations: 10191)
+I, [2024-06-07T15:08:40.720848 #262223]  INFO -- : [afcfde17-8f96-4c81-bd50-355be7bf7bf5] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 15:08:40 -0300
+I, [2024-06-07T15:08:40.721830 #262223]  INFO -- : [afcfde17-8f96-4c81-bd50-355be7bf7bf5] Processing by VisitantesController#index as HTML
+I, [2024-06-07T15:08:40.753768 #262223]  INFO -- : [afcfde17-8f96-4c81-bd50-355be7bf7bf5]   Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 13826)
+I, [2024-06-07T15:08:40.754044 #262223]  INFO -- : [afcfde17-8f96-4c81-bd50-355be7bf7bf5] Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 1.8ms | Allocations: 14636)
+I, [2024-06-07T15:08:43.034699 #262223]  INFO -- : [fe8ea6ba-55cf-4fd2-87cb-666713415c30] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 15:08:43 -0300
+I, [2024-06-07T15:08:43.036365 #262223]  INFO -- : [fe8ea6ba-55cf-4fd2-87cb-666713415c30] Processing by VisitantesController#index as HTML
+I, [2024-06-07T15:08:43.068596 #262223]  INFO -- : [fe8ea6ba-55cf-4fd2-87cb-666713415c30]   Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 13196)
+I, [2024-06-07T15:08:43.068928 #262223]  INFO -- : [fe8ea6ba-55cf-4fd2-87cb-666713415c30] Completed 200 OK in 32ms (Views: 27.4ms | ActiveRecord: 1.8ms | Allocations: 13873)
+I, [2024-06-07T15:08:45.606233 #262223]  INFO -- : [77ab70d1-7b8b-47f9-980e-eefa748e55bc] Started GET "/visitantes/39/edit" for 170.233.105.105 at 2024-06-07 15:08:45 -0300
+I, [2024-06-07T15:08:45.607511 #262223]  INFO -- : [77ab70d1-7b8b-47f9-980e-eefa748e55bc] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T15:08:45.607605 #262223]  INFO -- : [77ab70d1-7b8b-47f9-980e-eefa748e55bc]   Parameters: {"id"=>"39"}
+I, [2024-06-07T15:08:45.617790 #262223]  INFO -- : [77ab70d1-7b8b-47f9-980e-eefa748e55bc]   Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2484)
+I, [2024-06-07T15:08:45.618081 #262223]  INFO -- : [77ab70d1-7b8b-47f9-980e-eefa748e55bc] Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.3ms | Allocations: 3201)
+I, [2024-06-07T15:08:53.276939 #262223]  INFO -- : [07c6cd86-e2cb-4b28-9e1d-407a4b8e4090] Started GET "/visitantes/39/edit" for 170.233.105.105 at 2024-06-07 15:08:53 -0300
+I, [2024-06-07T15:08:53.278180 #262223]  INFO -- : [07c6cd86-e2cb-4b28-9e1d-407a4b8e4090] Processing by VisitantesController#edit as */*
+I, [2024-06-07T15:08:53.278259 #262223]  INFO -- : [07c6cd86-e2cb-4b28-9e1d-407a4b8e4090]   Parameters: {"id"=>"39"}
+I, [2024-06-07T15:08:53.281204 #262223]  INFO -- : [07c6cd86-e2cb-4b28-9e1d-407a4b8e4090] Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 223)
+I, [2024-06-07T15:08:53.477252 #262223]  INFO -- : [15e917ad-3fac-47a7-853f-f85e4a86eb08] Started GET "/usuarios/sign_in" for 170.233.105.105 at 2024-06-07 15:08:53 -0300
+I, [2024-06-07T15:08:53.478549 #262223]  INFO -- : [15e917ad-3fac-47a7-853f-f85e4a86eb08] Processing by Devise::SessionsController#new as */*
+I, [2024-06-07T15:08:53.487749 #262223]  INFO -- : [15e917ad-3fac-47a7-853f-f85e4a86eb08]   Rendered layout layouts/devise.html.erb (Duration: 3.0ms | Allocations: 1417)
+I, [2024-06-07T15:08:53.488092 #262223]  INFO -- : [15e917ad-3fac-47a7-853f-f85e4a86eb08] Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 2444)
+I, [2024-06-07T15:09:55.826210 #262574]  INFO -- : [8eabb89a-cc07-479a-9737-d0bf504e6003] Started GET "/visitantes/39/edit" for 170.233.105.105 at 2024-06-07 15:09:55 -0300
+I, [2024-06-07T15:09:55.831674 #262574]  INFO -- : [8eabb89a-cc07-479a-9737-d0bf504e6003] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T15:09:55.831795 #262574]  INFO -- : [8eabb89a-cc07-479a-9737-d0bf504e6003]   Parameters: {"id"=>"39"}
+W, [2024-06-07T15:09:55.981051 #262574]  WARN -- : [8eabb89a-cc07-479a-9737-d0bf504e6003] Importmap skipped missing path: inputmask.min.js
+W, [2024-06-07T15:09:55.982532 #262574]  WARN -- : [8eabb89a-cc07-479a-9737-d0bf504e6003] Importmap skipped missing path: inputmask.min.js
+I, [2024-06-07T15:09:55.987118 #262574]  INFO -- : [8eabb89a-cc07-479a-9737-d0bf504e6003]   Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 10960)
+I, [2024-06-07T15:09:55.987713 #262574]  INFO -- : [8eabb89a-cc07-479a-9737-d0bf504e6003] Completed 200 OK in 156ms (Views: 41.6ms | ActiveRecord: 35.2ms | Allocations: 31580)
+I, [2024-06-07T15:10:06.303799 #262574]  INFO -- : [9e5319b8-4ecf-478f-ab78-988e9f6f58fa] Started PATCH "/visitantes/39" for 170.233.105.105 at 2024-06-07 15:10:06 -0300
+I, [2024-06-07T15:10:06.305504 #262574]  INFO -- : [9e5319b8-4ecf-478f-ab78-988e9f6f58fa] Processing by VisitantesController#update as TURBO_STREAM
+I, [2024-06-07T15:10:06.305613 #262574]  INFO -- : [9e5319b8-4ecf-478f-ab78-988e9f6f58fa]   Parameters: {"authenticity_token"=>"[FILTERED]", "visitante"=>{"nome"=>"Ademilson", "sobrenome"=>"de Freitas", "telefone"=>"", "grupo_id"=>"4", "observacoes"=>"Aliançado"}, "commit"=>"Salvar", "id"=>"39"}
+I, [2024-06-07T15:10:06.376690 #262574]  INFO -- : [9e5319b8-4ecf-478f-ab78-988e9f6f58fa]   Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 3756)
+I, [2024-06-07T15:10:06.377036 #262574]  INFO -- : [9e5319b8-4ecf-478f-ab78-988e9f6f58fa] Completed 422 Unprocessable Entity in 71ms (Views: 58.5ms | ActiveRecord: 3.1ms | Allocations: 6016)
+I, [2024-06-07T15:10:18.100768 #262574]  INFO -- : [c78dc1e8-1718-4325-a246-1421eec5dca9] Started PATCH "/visitantes/39" for 170.233.105.105 at 2024-06-07 15:10:18 -0300
+I, [2024-06-07T15:10:18.102187 #262574]  INFO -- : [c78dc1e8-1718-4325-a246-1421eec5dca9] Processing by VisitantesController#update as TURBO_STREAM
+I, [2024-06-07T15:10:18.102277 #262574]  INFO -- : [c78dc1e8-1718-4325-a246-1421eec5dca9]   Parameters: {"authenticity_token"=>"[FILTERED]", "visitante"=>{"nome"=>"Ademilson", "sobrenome"=>"de Freitas", "telefone"=>"24999991111", "grupo_id"=>"4", "observacoes"=>"Aliançado"}, "commit"=>"Salvar", "id"=>"39"}
+I, [2024-06-07T15:10:18.119858 #262574]  INFO -- : [c78dc1e8-1718-4325-a246-1421eec5dca9] Redirected to https://consolidacao.projetovidamendes.com/visitantes/39
+I, [2024-06-07T15:10:18.120020 #262574]  INFO -- : [c78dc1e8-1718-4325-a246-1421eec5dca9] Completed 302 Found in 18ms (ActiveRecord: 7.3ms | Allocations: 2286)
+I, [2024-06-07T15:10:18.283525 #262574]  INFO -- : [350ab503-a75e-48ee-9d6e-60e319dc4411] Started GET "/visitantes/39" for 170.233.105.105 at 2024-06-07 15:10:18 -0300
+I, [2024-06-07T15:10:18.284535 #262574]  INFO -- : [350ab503-a75e-48ee-9d6e-60e319dc4411] Processing by VisitantesController#show as TURBO_STREAM
+I, [2024-06-07T15:10:18.284609 #262574]  INFO -- : [350ab503-a75e-48ee-9d6e-60e319dc4411]   Parameters: {"id"=>"39"}
+I, [2024-06-07T15:10:18.295313 #262574]  INFO -- : [350ab503-a75e-48ee-9d6e-60e319dc4411]   Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 1977)
+I, [2024-06-07T15:10:18.295594 #262574]  INFO -- : [350ab503-a75e-48ee-9d6e-60e319dc4411] Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 1.2ms | Allocations: 2825)
+I, [2024-06-07T15:10:18.460009 #262574]  INFO -- : [d8c461fd-bc60-4e3c-865c-406627e6bf62] Started GET "/visitantes/39" for 170.233.105.105 at 2024-06-07 15:10:18 -0300
+I, [2024-06-07T15:10:18.461282 #262574]  INFO -- : [d8c461fd-bc60-4e3c-865c-406627e6bf62] Processing by VisitantesController#show as HTML
+I, [2024-06-07T15:10:18.461368 #262574]  INFO -- : [d8c461fd-bc60-4e3c-865c-406627e6bf62]   Parameters: {"id"=>"39"}
+I, [2024-06-07T15:10:18.469689 #262574]  INFO -- : [d8c461fd-bc60-4e3c-865c-406627e6bf62]   Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1263)
+I, [2024-06-07T15:10:18.470001 #262574]  INFO -- : [d8c461fd-bc60-4e3c-865c-406627e6bf62] Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 1.4ms | Allocations: 1968)
+I, [2024-06-07T15:10:19.405422 #262574]  INFO -- : [e77af9d0-9099-41a7-8eae-1436a7188e0d] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 15:10:19 -0300
+I, [2024-06-07T15:10:19.406542 #262574]  INFO -- : [e77af9d0-9099-41a7-8eae-1436a7188e0d] Processing by VisitantesController#index as HTML
+I, [2024-06-07T15:10:19.455984 #262574]  INFO -- : [e77af9d0-9099-41a7-8eae-1436a7188e0d]   Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 14046)
+I, [2024-06-07T15:10:19.456366 #262574]  INFO -- : [e77af9d0-9099-41a7-8eae-1436a7188e0d] Completed 200 OK in 50ms (Views: 43.8ms | ActiveRecord: 2.4ms | Allocations: 14858)
+I, [2024-06-07T15:10:30.326581 #262574]  INFO -- : [9e58a0b7-a283-41f2-a90d-71335294214f] Started GET "/visitantes/97/edit" for 170.233.105.105 at 2024-06-07 15:10:30 -0300
+I, [2024-06-07T15:10:30.327542 #262574]  INFO -- : [9e58a0b7-a283-41f2-a90d-71335294214f] Processing by VisitantesController#edit as HTML
+I, [2024-06-07T15:10:30.327605 #262574]  INFO -- : [9e58a0b7-a283-41f2-a90d-71335294214f]   Parameters: {"id"=>"97"}
+I, [2024-06-07T15:10:30.338337 #262574]  INFO -- : [9e58a0b7-a283-41f2-a90d-71335294214f]   Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2473)
+I, [2024-06-07T15:10:30.338595 #262574]  INFO -- : [9e58a0b7-a283-41f2-a90d-71335294214f] Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 1.9ms | Allocations: 3184)
+I, [2024-06-07T15:10:33.566180 #262574]  INFO -- : [da7cd963-e244-4b83-a894-e490b7a536ac] Started PATCH "/visitantes/97" for 170.233.105.105 at 2024-06-07 15:10:33 -0300
+I, [2024-06-07T15:10:33.567342 #262574]  INFO -- : [da7cd963-e244-4b83-a894-e490b7a536ac] Processing by VisitantesController#update as TURBO_STREAM
+I, [2024-06-07T15:10:33.567433 #262574]  INFO -- : [da7cd963-e244-4b83-a894-e490b7a536ac]   Parameters: {"authenticity_token"=>"[FILTERED]", "visitante"=>{"nome"=>"Adriana", "sobrenome"=>"Barbosa", "telefone"=>"24999060527", "grupo_id"=>"4", "observacoes"=>""}, "commit"=>"Salvar", "id"=>"97"}
+I, [2024-06-07T15:10:33.578258 #262574]  INFO -- : [da7cd963-e244-4b83-a894-e490b7a536ac] Redirected to https://consolidacao.projetovidamendes.com/visitantes/97
+I, [2024-06-07T15:10:33.578450 #262574]  INFO -- : [da7cd963-e244-4b83-a894-e490b7a536ac] Completed 302 Found in 11ms (ActiveRecord: 4.8ms | Allocations: 1554)
+I, [2024-06-07T15:10:33.734703 #262574]  INFO -- : [57cfc3d0-9661-4a1a-9d9e-f01404ca3255] Started GET "/visitantes/97" for 170.233.105.105 at 2024-06-07 15:10:33 -0300
+I, [2024-06-07T15:10:33.735779 #262574]  INFO -- : [57cfc3d0-9661-4a1a-9d9e-f01404ca3255] Processing by VisitantesController#show as TURBO_STREAM
+I, [2024-06-07T15:10:33.735892 #262574]  INFO -- : [57cfc3d0-9661-4a1a-9d9e-f01404ca3255]   Parameters: {"id"=>"97"}
+I, [2024-06-07T15:10:33.743828 #262574]  INFO -- : [57cfc3d0-9661-4a1a-9d9e-f01404ca3255]   Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1263)
+I, [2024-06-07T15:10:33.744758 #262574]  INFO -- : [57cfc3d0-9661-4a1a-9d9e-f01404ca3255] Completed 200 OK in 8ms (Views: 4.2ms | ActiveRecord: 1.3ms | Allocations: 1961)
+I, [2024-06-07T15:10:34.631867 #262574]  INFO -- : [9622d142-4d4b-4973-bae6-40288bd38283] Started GET "/visitantes" for 170.233.105.105 at 2024-06-07 15:10:34 -0300
+I, [2024-06-07T15:10:34.633232 #262574]  INFO -- : [9622d142-4d4b-4973-bae6-40288bd38283] Processing by VisitantesController#index as HTML
+I, [2024-06-07T15:10:34.663489 #262574]  INFO -- : [9622d142-4d4b-4973-bae6-40288bd38283]   Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 13631)
+I, [2024-06-07T15:10:34.663750 #262574]  INFO -- : [9622d142-4d4b-4973-bae6-40288bd38283] Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 1.7ms | Allocations: 14315)

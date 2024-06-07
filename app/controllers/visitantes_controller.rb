@@ -76,6 +76,6 @@ class VisitantesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def visitante_params
-      params.require(:visitante).permit(:nome, :sobrenome, :telefone, :grupo, :categoria, :observacoes, :id)
+      params.require(:visitante).permit(:nome, :sobrenome, :telefone, :grupo_id, :categoria, :observacoes, :id)
     end
 end

@@ -31618,3 +31618,19 @@ Migrating to CreateGrupos (20240607161207)
   [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240607161207')[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('4556481938687830935')[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4556481938687830935', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to AddGrupoToVisitante (20240607180056)
+  [1m[35m (3.7ms)[0m  [1m[35mALTER TABLE `visitante` DROP COLUMN `grupo`[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('4556481938687830935')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('4556481938687830935', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.6ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+Migrating to AddGrupoToVisitante (20240607180056)
+  [1m[35m (48.1ms)[0m  [1m[35mALTER TABLE `visitantes` DROP COLUMN `grupo`[0m
+  [1m[35m (15.1ms)[0m  [1m[35mALTER TABLE `visitantes` ADD `grupo_id` bigint[0m
+  [1m[35m (37.6ms)[0m  [1m[35mCREATE INDEX `index_visitantes_on_grupo_id` ON `visitantes` (`grupo_id`)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20240607180056')[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('4556481938687830935')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
