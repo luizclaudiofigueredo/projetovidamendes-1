@@ -1,38 +1,36 @@
-<%= turbo_frame_tag 'search' do %>
-
 <div class="min-h-screen py-5">
     
     <div class='overflow-x-auto w-full'>
 
-        <table class="table-auto w-full mt-8">
+        <table id="visitantes-table" class="table-auto w-full mt-8">
             <thead>
                 <tr>
                     <th class='text-left text-gray-900 font-light text-xs border-y border-gray-200 py-2'>NOME COMPLETO</th>
                     <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>TELEFONE</th>
                     <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>GRUPO</th>
-                    <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>DATA VISITA</th>
+                    <th class='text-gray-900 font-light text-xs border-y border-gray-200 py-2'>DATA CADASTRO</th>
                 </tr>
             </thead>
             <tbody>
 
                 <% visitantes.each do |visitante| %>
-                    
+                   
                     <tr dom_id visitante class="min-w-full p-4 border-solid border-y border-gray-200">
                         
                         <td class="my-5 text-xs border-solid border-y border-gray-200 py-2">
-                        <p class="text-gray-800 font-bold"><%= link_to visitante.nome_completo.upcase, edit_visitante_path(visitante), data: { turbo: false } %></p>
+                        <p class="text-gray-800 font-bold"><%= link_to visitante&.nome_completo&.upcase, edit_visitante_path(visitante), data: { turbo: false } %></p>
                         </td>
                     
                         <td class="my-5 text-center text-xs border-solid border-y border-gray-200">
-                        <%= visitante.telefone %>
+                        <%= visitante&.telefone %>
                         </td>
 
                         <td class="my-5 text-center text-xs border-solid border-y border-gray-200">
-                        <%= visitante.nome_grupo %>
+                        <%= visitante&.nome_grupo %>
                         </td>                        
                     
                         <td class="my-5 text-center text-xs border-solid border-y border-gray-200 flex-auto">
-                        <%= visitante.created_at.strftime('%d/%m/%Y') %>
+                        <%= visitante&.created_at&.strftime('%d/%m/%Y') %>
                         </td>  
                     
                     </tr>
@@ -41,11 +39,41 @@
 
             </tbody>
         </table>
-        <div class="w-full flex justify-center mt-4">
-            <%== pagy_nav(@pagy) if @pagy.pages > 1 %>   
-        </div>
     </div>
 </div>
 
-<% end %>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
 
+<script>
+    $(document).ready(() => {
+        $('#visitantes-table').DataTable({
+            pageLength: 25,
+            processing: true,
+            order: [],            
+            responsive: true,
+            searching: true,
+            info: true,
+            paging: true,      
+            retrieve: true,                      
+            dom: 'Bfrtip',
+            buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            language: {
+                decimal:        "",
+                emptyTable:     "Dados não disponíveis na tabela",
+                info:           "Exibindo _START_ a _END_ de _TOTAL_ registros",
+                infoEmpty:      "Exibindo 0 a 0 de 0 registros",
+                infoFiltered:   "(filtered from _MAX_ total entries)",
+                infoPostFix:    "",                                  
+                paginate: {
+                    next: 'Próximo',
+                    previous: 'Anterior'  
+                },
+                "sSearch": "Pesquisar: "
+            }                        
+        })
+    })
+</script>

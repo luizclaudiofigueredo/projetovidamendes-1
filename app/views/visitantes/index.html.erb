@@ -5,17 +5,7 @@
 
   <div class="flex justify-between items-center">
     <h1 class="font-bold text-3xl">Listagem dos Visitantes</h1>
-    <%= link_to 'Nova Pessoa', new_visitante_path, class: "rounded-full py-3 px-5 bg-blue-600 text-white block font-medium" %>
-  </div>
-
-  <div class="py-4">
-    <%= form_with url: visitantes_path, 
-                  method: :get,
-                  data: { turbo_frame: 'search',
-                          controller: "search",
-                          action: "keyup->search#perform" } do |f| %>
-        <%= f.text_field :query, value: params[:query], class: 'w-1/2 rounded-full border-gray-400', placeholder: 'Localizar' %>
-    <% end %>
+    <%= link_to 'Nova Pessoa', new_visitante_path, class: "rounded-full py-3 px-5 bg-orange-500 text-orange-800 block font-medium" %>
   </div>
 
   <div>

@@ -5,13 +5,7 @@ class VisitantesController < ApplicationController
   # GET /visitantes or /visitantes.json
   def index
 
-    if params[:query].present?
-      visitantes = Visitante.where('nome LIKE ? OR sobrenome LIKE ?', '%' + params[:query] + '%', '%' + params[:query] + '%')
-    else
-      visitantes = Visitante.all.order(nome: :asc)
-    end
-
-    @pagy, @visitantes = pagy(visitantes)
+    @visitantes = Visitante.all.order(nome: :asc)
 
     respond_to do |format|
       if turbo_frame_request? && turbo_frame_request_id=='search'

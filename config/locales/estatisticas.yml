@@ -1,0 +1,18 @@
+pt-BR:
+  activerecord:
+    models:
+      estatistica:
+        one: "Estatística"
+        other: "Estatísticas"
+
+    attributes:
+        estatistica:
+            tema_culto: "Tema do Culto"
+            data_culto: "Data do Culto"
+            total_presentes: "Total Presentes"
+            total_visitantes: "Total Visitantes"
+            total_conversoes: "N.º de Conversões"
+            total_aliancados: "Total de Aliançados"
+            total_batismos: "Total de Batismos"
+            total_criancas: "Total de Crianças"
+            observacoes: "Observações"
