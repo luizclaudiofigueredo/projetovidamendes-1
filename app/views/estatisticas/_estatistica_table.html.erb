@@ -1,10 +1,8 @@
-<%= turbo_frame_tag 'search' do %>
-
 <div class="min-h-screen py-5">
     
     <div class='overflow-x-auto w-full'>
 
-        <table class="table-auto w-full mt-8">
+        <table id="estatisticas-table" class="table-auto w-full mt-8">
             <thead>
                 <tr>
                     <th class='text-left text-gray-900 font-light text-xs border-y border-gray-200 py-2'>DATA</th>
@@ -46,4 +44,34 @@
     </div>
 </div>
 
-<% end %>
+<script async>
+    $(document).ready(() => {
+        $('#estatisticas-table').DataTable({
+            pageLength: 25,
+            processing: true,
+            order: [],            
+            responsive: true,
+            searching: true,
+            info: true,
+            paging: true,      
+            retrieve: true,                      
+            dom: 'Bfrtip',
+            buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+            ],
+            language: {
+                decimal:        "",
+                emptyTable:     "Dados não disponíveis na tabela",
+                info:           "Exibindo _START_ a _END_ de _TOTAL_ registros",
+                infoEmpty:      "Exibindo 0 a 0 de 0 registros",
+                infoFiltered:   "(filtered from _MAX_ total entries)",
+                infoPostFix:    "",                                  
+                paginate: {
+                    next: 'Próximo',
+                    previous: 'Anterior'  
+                },
+                "sSearch": "Pesquisar: "
+            }                        
+        })
+    })
+</script>
